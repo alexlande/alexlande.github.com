@@ -1,0 +1,32 @@
+---
+layout: archive
+title: Articles
+---		
+		
+		<header>
+
+			<h2><a href="/articles">Articles</a></h2>
+			
+			<p>This is a collection of my writing on topics that are usually related to design and/or the web.</p>
+			
+			<p><a class="contact" href="mailto:alexlande@gmail.com?subject=Some thoughts">Have any thoughts?</a></p>
+			
+		</header>
+		
+		{% for post in site.categories.articles | limit: 6 %}
+		
+			<article>
+			
+				<a href="{{ post.url }}">
+				
+					<time datetime="2011-09-19" pubdate>{{ post.date | date:"%B %d, %Y" }}</time>
+			
+					<h3>{{ post.title }}</h3>					
+			
+					<img src="http://src.sencha.io/{{ post.image }}" />
+					
+				</a>
+			
+			</article>
+			
+		{% endfor %}

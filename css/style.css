@@ -1,0 +1,1110 @@
+/* _________________________________________________
+
+320 and Up boilerplate extension
+
+Author: Andy Clarke
+Version: 0.9b
+URL: http://stuffandnonsense.co.uk/projects/320andup/
+_____________________________________________________
+
+1.ROOT
+2.HEADINGS
+3.TYPOGRAPHY
+4.LINKS
+5.FIGURES & IMAGES
+6.TABLES
+7.FORMS (See css/mylibs/forms.css)
+8.BANNER header[role="banner"]
+9.NAVIGATION nav[role="navigation"]
+10.CONTENT
+11.MAIN div[role="main"]
+12.COMPLEMENTARY div[role="complementary"]
+13.CONTENTINFO footer[role="contentinfo"]
+14.GLOBAL OBJECTS
+15.VENDOR-SPECIFIC 
+16.TEMPLATE SPECIFICS
+17.MODERNIZR
+
+COLOURS 
+
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin : 0;
+padding : 0;
+border : 0;
+font-size : 100%;
+font : inherit;
+vertical-align : baseline; }
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display : block; }
+
+abbr[title] { 
+border-bottom : 1px dotted; 
+cursor : help; }
+
+/* 1.ROOT */
+
+html {
+overflow-y : scroll;
+background : rgb(255,255,255); }
+
+body { 
+margin : 0 auto;
+padding : 0;
+width : 100%;
+font : 100%/1.4 proxima-nova, sans-serif;
+color : rgb(40,40,40); 
+background-color : transparent; }
+
+/* 2.HEADINGS */
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+font-family : proxima-nova-extra-condensed,sans-serif;
+font-weight : 700;
+text-transform : uppercase; }
+
+h1 { 
+font-size : 1.5em; /* 24 / 16 = 1.5 */
+text-shadow : 1px 1px 1px #000000; }
+
+h2 { 
+margin-bottom : 0.46em;
+font-size : 3em; /* 48 / 16 = 3 */
+line-height : 0.9em; }
+
+h3 { 
+margin-bottom : 0.95em;
+font-size : 1.5em; /* 24 / 16 = 1.5 */
+line-height : 0.9em; }
+
+h4 { 
+margin-bottom : 1.25em;
+font-size : 1.125em; /* 18 / 16 = 1.125 */
+line-height : 1.25; }
+
+h5 { 
+margin-bottom : 1.4em;
+font-size : 1em; /* 16 / 16 = 1 */ }
+
+h6 { 
+font-size : 0.875em; /* 14 / 16 = 0.875 */ }
+
+/* 3.TYPOGRAPHY */
+
+p, 
+ol, 
+ul, 
+dl, 
+address { 
+margin-bottom : 1.4em; 
+font-size : 1em; /* 16 / 16 = 1 */ }
+
+ul, 
+ol { 
+margin : 0 0 1.4em -24px; 
+padding-left : 24px; }
+
+ul { 
+list-style-type : disc; }
+
+ol { 
+list-style-type : decimal; }
+
+li ul, 
+li ol { 
+margin : 0;
+font-size : 1em; /* 16 / 16 = 1 */ }
+
+dl, 
+dd { 
+margin-bottom : 1.4em; }
+
+dt { 
+font-weight : normal; }
+
+blockquote  { 
+margin : 0 0 1.4em -24px; 
+padding-left : 24px; 
+border-left : 1px solid rgb(200,200,200);
+font-style : italic; }
+
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {
+content : '';
+content : none; }
+
+b, 
+strong	{ 
+font-weight : bold; }
+
+i, 
+em { 
+font-style : italic; }
+
+sup, 
+sub { 
+position : relative;
+font-size : 75%; 
+line-height : 0; }
+
+sup { 
+top : -.5em; }
+
+sub { 
+bottom : -.25em; }
+
+address { 
+font-style : normal; }
+
+pre { 
+margin-bottom : 1.4em; 
+white-space : pre; 
+white-space : pre-wrap; 
+word-wrap : break-word; }
+
+pre, 
+code { 
+font : .875em 'andale mono', 'lucida console', monospace; 
+line-height : 1.4; }
+
+small {
+font-size : 1em; /* 16 / 16 = 1 */ }
+
+/* 4.LINKS */
+
+a, 
+a:visited {
+outline : none;
+color : rgb(23,119,175);
+text-decoration : none; }
+ 
+a:hover { 
+outline : none;
+color : rgb(40,40,40); }
+ 
+a:active, 
+a:focus { 
+outline : none;
+color : rgb(0,0,0); }
+
+/* 5.FIGURES & IMAGES */
+
+figure img,
+figure object,
+figure embed {
+margin-bottom : .75em;
+max-width : 100%; }
+
+figcaption {
+display : block;
+font-weight : normal; }
+
+/* 6.TABLES */
+
+table { 
+border-collapse : collapse;
+border-spacing : 0;
+margin-bottom : 1.4em; 
+width : 100%;
+font-size : .875em; /* 14 / 16 = .875 */ }
+
+th { 
+font-weight : bold; }
+
+th, td, caption { 
+padding : .25em 10px .25em 5px; }
+
+tfoot { 
+font-style : italic; }
+
+caption { 
+background-color : transparent; }
+
+/* 7.FORMS (See css/mylibs/forms.css) */
+
+/* 8.BANNER */
+
+header[role="banner"] {
+color : rgb(255,255,255);
+background : rgb(40,40,40);
+border-bottom : 1px solid #000000;
+position : relative;
+-moz-box-shadow : 0 0 10px rgba(40,40,40,0.1);
+-webkit-box-shadow : 0 0 10px rgba(40,40,40,0.1);
+box-shadow : 0 0 10px rgba(40,40,40,0.1);
+text-shadow : 1px 1px 1px #000000;
+border-top : 2px solid #21ABFB; }
+
+.home header[role="banner"] {
+padding : 4px 0 0; }
+
+header[role="banner"] a, header[role="banner"] a:visited {
+color : #21ABFB;
+-moz-transition : all 0.3s ease;
+-webkit-transition : all 0.3s ease;
+-o-transition : all 0.3s ease;
+transition : all 0.3s ease; }
+
+header[role="banner"] a:hover {
+color : rgb(255,255,255); }
+
+header[role="banner"] a:active {
+color : rgb(255,255,255);
+text-decoration : underline; }
+
+header[role="banner"] h1 {
+line-height : 1.2;
+float : left;
+margin-top : 4px; }
+
+.home header[role="banner"] h1 {
+float : none;
+font-size : 3em;
+margin-top : 0; }
+
+header[role="banner"] h1 a, header[role="banner"] h1 a:visited {
+color : rgb(255,255,255);
+display : inline-block; }
+
+header[role="banner"] h1 a:hover {
+text-shadow : 2px 2px 1px #1777AF; }
+
+header[role="banner"] h1 a:active {
+text-decoration : none; }
+
+header[role="banner"] h2 {
+font : 100%/1.4 proxima-nova, sans-serif;
+text-transform : none;
+margin-bottom : 1.4em; }
+
+/* 9.NAVIGATION */
+
+header[role="banner"] nav {
+margin : 0;
+clear : left; }
+
+header[role="banner"] ul {
+list-style : none;
+margin : 0;
+width : 100%;
+padding : 0; }
+
+header[role="banner"] li {
+float : left;
+margin-right : 9.49%; }
+
+header[role="banner"] li a, header[role="banner"] li a:visited {
+color : #BCBCBC; }
+
+header[role="banner"] li a:hover {
+color : rgb(255,255,255); }
+
+/* 10.CONTENT */
+
+.content {
+background : rgb(255,255,255);
+margin : 0 auto; }
+
+/* 11.MAIN */
+
+div[role="main"] {
+padding : 1.4em 0; }
+
+div[role="main"] section {
+padding : 0 0 1.4em; }
+
+div[role="main"] section:last-child {
+padding : 0; }
+
+div[role="main"] h2 {
+margin : 0 5% 0.46em; }
+
+.home div[role="main"] h2 {
+margin : 0 5%; }
+
+div[role="main"] a {
+border : 1px solid transparent;
+margin : 0 -1px;
+-moz-transition : all 0.3s ease;
+-webkit-transition : all 0.3s ease;
+-o-transition : all 0.3s ease;
+transition : all 0.3s ease;
+-moz-border-radius : 3px;
+-webkit-border-radius : 3px;
+border-radius : 3px; }
+
+.archive article a, .archive a.more {
+padding : 16px 5%;
+display : block;
+-moz-transition : all 0.3s ease-in-out;
+-webkit-transition : all 0.3s ease-in-out;
+-o-transition : all 0.3s ease-in-out;
+transition : all 0.3s ease-in-out; }
+
+div[role="main"] a:hover {
+background : rgba(40,40,40,0.1);
+text-shadow : 1px 1px 1px rgba(255,255,255,1);
+-moz-box-shadow : inset 0 0 10px rgba(40,40,40,0.1);
+-webkit-box-shadow : inset 0 0 10px rgba(40,40,40,0.1);
+box-shadow : inset 0 0 10px rgba(40,40,40,0.1);
+border : 1px solid rgba(40,40,40,0.1); }
+
+div[role="main"] a:active{
+background : rgba(40,40,40,0.2);
+text-shadow : 1px 1px 1px rgba(255,255,255,1);
+-moz-box-shadow : inset 0 0 10px rgba(40,40,40,0.1);
+-webkit-box-shadow : inset 0 0 10px rgba(40,40,40,0.1);
+box-shadow : inset 0 0 10px rgba(40,40,40,0.2);
+border : 1px solid rgba(40,40,40,0.2); }
+
+.archive a.more {
+text-align : center;
+clear : both; }
+
+div[role="main"] h2 a {
+padding-right : 36px;
+background : url("../img/arrow.png") no-repeat scroll right 4px transparent;
+display : inline-block;
+color : rgb(40,40,40);
+-moz-transition : all 0.1s ease;
+-webkit-transition : all 0.1s ease;
+-o-transition : all 0.1s ease;
+transition : all 0.1s ease;
+border : 1px solid transparent; }
+
+div[role="main"] h2 a:hover {
+color : #1777AF;
+background : url("../img/arrow2.png") no-repeat scroll right 4px transparent;
+border : 1px solid transparent;
+-moz-box-shadow : none;
+-webkit-box-shadow : none;
+box-shadow : none;
+text-shadow : none; }
+
+div[role="main"] h2 a:active {
+text-decoration : underline;
+-moz-box-shadow : none;
+-webkit-box-shadow : none;
+box-shadow : none;
+background : url("../img/arrow2.png") no-repeat scroll right 4px transparent;
+border : 1px solid transparent; }
+
+article h3 {
+color : #282828; }
+
+.study {
+max-width : 668px; }
+
+.project .study {
+clear : both; }
+
+aside {
+margin : 0 5% 1.4em;
+border-bottom : 1px solid rgba(40,40,40,0.3);
+max-width : 668px; }
+
+aside em {
+display : block;
+color : rgba(40,40,40,0.6);
+font-style : normal;
+text-transform : uppercase;
+font-size : 0.8em;
+line-height : 1.65em; }
+
+aside ul {
+list-style : none;
+margin-bottom : 0; }
+
+aside li, aside p {
+margin-bottom : 1.4em;
+line-height : 1.4em; }
+
+.palette {
+padding : 0; }
+
+.palette li {
+width : 14px;
+float : left;
+list-style : none;
+border : 1px solid rgba(40,40,40,0.3);
+height : 14px;
+margin : 3px 1px;
+text-indent : -9999px; }
+
+article p {
+margin : 0 5% 1.4em; }
+
+aside p {
+margin : 0 0 1.4em; }
+
+.project img {
+border : 1px solid rgba(40,40,40,0.3);
+width : 90%;
+margin : 0 auto;
+display : block;
+max-width : 665px;
+margin-bottom : 1.4em; }
+
+.project figure {
+clear : both; }
+
+.project figcaption {
+color : rgba(40,40,40,0.7);
+margin : 0 5%;
+padding-bottom : 1.4em;
+max-width : 668px; }
+
+.project figure:last-child figcaption {
+padding-bottom : 0; }
+
+.project figcaption a {
+text-transform : uppercase;
+font-size : 0.8em; }
+
+.archive img {
+width : 100%;
+max-width : 500px;
+border : 1px solid rgba(40,40,40,0.3); }
+
+.archive header {
+margin : 0 5%;
+border-bottom : 1px solid rgba(40, 40, 40, 0.3); }
+
+.archive header h2 {
+margin : 0 0 0.46em; }
+
+/* 12.COMPLEMENTARY */
+
+div[role="complementary"] {
+padding : 1.4em 0;
+color : rgb(255,255,255);
+background : #282828; 
+text-shadow : 1px 1px 1px #000000;
+border-top : 1px solid #000000;
+-moz-box-shadow : 0 -3px 10px rgba(40, 40, 40, 0.1);
+-webkit-box-shadow : 0 -3px 10px rgba(40, 40, 40, 0.1);
+box-shadow : 0 -3px 10px rgba(40, 40, 40, 0.1); }
+
+div[role="complementary"] h2 {
+margin : 0 5%; }
+
+div[role="complementary"] p {
+margin : 0; }
+
+div[role="complementary"] a {
+-moz-transition : all 0.3s ease;
+-webkit-transition : all 0.3s ease;
+-o-transition : all 0.3s ease;
+transition : all 0.3s ease;
+color : #21ABFB; }
+
+div[role="complementary"] a:visited {
+color : #21ABFB; }
+
+div[role="complementary"] a:hover {
+color : rgb(255,255,255); }
+
+div[role="complementary"] a:active {
+color : rgb(255,255,255);
+text-decoration : underline; }
+
+div[role="complementary"] ul {
+list-style : none;
+margin-bottom : 0; }
+
+div[role="complementary"] section {
+padding : 1.4em 0; }
+
+div[role="complementary"] nav {
+padding : 1.4em 0; }
+
+/* 13.CONTENTINFO */
+
+footer {
+padding : 1.4em 0;
+color : rgb(255,255,255);
+background : #282828;
+text-align : center;
+text-shadow : 1px 1px 1px #000000;
+border-bottom : 3px solid #21ABFB; }
+
+footer a, footer a:visited {
+-moz-transition : all 0.3s ease;
+-webkit-transition : all 0.3s ease;
+-o-transition : all 0.3s ease;
+transition : all 0.3s ease;
+color : #21ABFB; }
+
+footer a:hover {
+color : rgb(255,255,255); }
+
+footer a:active {
+color : rgb(255,255,255);
+text-decoration : underline; }
+
+/* 14.GLOBAL OBJECTS */
+
+.clearfix { 
+zoom : 1; }
+
+.clearfix:before, 
+.clearfix:after { 
+content : "\0020"; 
+display : block; 
+height : 0; 
+overflow : hidden; }
+
+.clearfix:after { 
+clear : both; }
+
+.container {
+width : 90%;
+max-width : 900px;
+margin : 0 auto; }
+
+/* 15.VENDOR-SPECIFIC */
+
+body {
+-webkit-text-size-adjust : 100%; 
+-ms-text-size-adjust : 100%; }
+
+a:link { 
+-webkit-tap-highlight-color : rgb(52,158,219); }
+
+::-webkit-selection { 
+background : rgb(23,119,175); 
+color : rgb(250,250,250); 
+text-shadow : none; }
+
+::-moz-selection { 
+background : rgb(23,119,175); 
+color : rgb(250,250,250); 
+text-shadow : none; }
+
+::selection { 
+background : rgb(23,119,175); 
+color : rgb(250,250,250); 
+text-shadow : none; }
+
+/* input[type=search] {
+-webkit-appearance : none; }
+
+input[type="search"]::-webkit-search-decoration, 
+input[type="search"]::-webkit-search-cancel-button {
+display : none; } */
+
+::-webkit-input-placeholder {
+padding : 10px;
+font-size : .875em; 
+line-height : 1.4; }
+
+input:-moz-placeholder { 
+padding : 10px;
+font-size : .875em; 
+line-height : 1.4; }
+
+.ie7 img,
+.iem7 img { 
+-ms-interpolation-mode : bicubic; }
+
+div,
+input,
+textarea  { 
+-webkit-box-sizing : border-box;
+-moz-box-sizing : border-box;
+-o-box-sizing : border-box;
+box-sizing : border-box; }
+
+/* Non-semantic helper classes */
+
+/* Image replacement */
+.ir { 
+display : block; 
+text-indent : -999em; 
+overflow : hidden; 
+background-repeat : no-repeat; 
+text-align : left; 
+direction : ltr; }
+
+/* Hide for screenreaders and visual browsers */
+.hidden { 
+display : none; 
+visibility : hidden; }
+
+/* Hide visually */
+.visuallyhidden { 
+position : absolute;
+clip : rect(0 0 0 0); 
+overflow : hidden;
+margin: -1px;
+padding : 0;
+height : 1px;      
+width : 1px;
+border : 0; }
+
+/* Allow an element to be focusable via keyboard  */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { 
+position : static;
+clip : auto; 
+overflow : visible;
+height : auto; 
+margin : 0;   
+width : auto; }
+
+/* Hide but maintain layout */
+.invisible { 
+visibility : hidden; }
+
+/* 16.TEMPLATE SPECIFICS */
+
+#goog-fixurl ul  {
+list-style-type : none; }
+
+#goog-fixurl input  {
+margin-bottom : 1.5em; }
+
+/* 17.MODERNIZR */
+
+/* MEDIA QUERIES */
+
+/*Print __________________________________________________________________________________________________________ */
+@media print {
+* { 
+background : transparent !important; 
+color : black !important; 
+text-shadow : none !important; 
+filter : none !important;
+-ms-filter : none !important; } 
+
+a, a:visited { 
+color : #444 !important; 
+text-decoration : underline; }
+
+a[href]:after { 
+content : " (" attr(href) ")"; }
+
+abbr[title]:after { 
+content : " (" attr(title) ")"; }
+
+a[href^="javascript:"]:after, 
+a[href^="#"]:after { 
+content : ""; }
+  
+pre, blockquote { 
+border : 1px solid #999; 
+page-break-inside : avoid; }
+
+thead { 
+display : table-header-group; }
+
+tr, img { 
+page-break-inside : avoid; }
+
+@page { 
+margin : .5cm; }
+
+p, h2, h3 { 
+orphans : 3; 
+widows : 3; }
+
+h2, h3 { 
+page-break-after : avoid; }
+}/*/mediaquery*/
+
+/*480px __________________________________________________________________________________________________________ */
+@media only screen and (min-width: 480px) {
+
+/* 1.ROOT */
+/* 2.HEADINGS */
+
+.home header[role="banner"] h1 {
+text-shadow : 3px 3px 1px #000000;
+font-size : 6em; }
+
+.home header[role="banner"] {
+padding : 0; }
+
+/* 3.TYPOGRAPHY */
+/* 4.LINKS */
+/* 5.FIGURES & IMAGES */
+/* 6.TABLES */
+/* 7.FORMS */
+/* 8.BANNER */
+
+header[role="banner"] {
+padding : 0; }
+ 
+/* 9.NAVIGATION */
+
+header[role="banner"] nav {
+margin-left : 25.78%;
+width : 74.22%;
+clear : none; }
+
+header[role="banner"] ul {
+list-style : none;
+float : left;
+margin : 0;
+padding : 0; }
+
+header[role="banner"] li {
+float : left;
+margin-top : 13px;
+margin-bottom : 10px;
+margin-right : 9.49%;
+line-height : 0.8;
+width : 12.87%;
+max-width : 53px; }
+
+header[role="banner"] li a {
+padding : 20px 0 8px; }
+
+/* 10.CONTENT */
+/* 11.MAIN */
+
+div[role="main"] {
+margin : 0 auto;
+width : 90%;
+max-width : 900px; }
+
+div[role="main"] section {
+width : 48.33%;
+float : left;
+padding : 0; }
+
+div[role="main"] section:first-child {
+margin-right : 3.33%; }
+
+div[role="main"] h2 {
+margin : 0 0 0.46em; }
+
+.home div[role="main"] h2 {
+margin : 0; }
+
+.archive header {
+margin : 0; }
+
+.archive article {
+width : 48.33%;
+float : left; }
+
+.archive article:nth-child(even) {
+margin-right : 3.33%; }
+
+.archive section article {
+width : 100%; }
+
+.archive section article:nth-child(odd) {
+margin-right : 0; }
+
+.archive a.more {
+width : 100px;
+margin : 0 auto;
+text-align : center; }
+
+.archive article a {
+padding : 6px 12px;
+margin : 8px -13px; }
+
+article p {
+margin : 0 0 1.4em; }
+
+.project img {
+border : 1px solid rgba(40,40,40,0.3);
+width : 100%;
+margin : 0;
+max-width : 665px;
+margin-bottom : 1.4em; }
+
+.project figcaption {
+margin : 0; }
+
+aside {
+margin : 0 0 1.4em; }
+
+aside li, aside p {
+width : 48.33%;
+float : left;
+margin-right : 3.33%; }
+
+aside li:nth-child(even) {
+margin-right : 0; }
+
+aside p:nth-child(even) {
+margin-right : 0; }
+
+.about aside p {
+width : 100%; }
+
+.palette li {
+width : 14px;
+margin : 3px 1px; }
+
+.palette li:nth-child(even) {
+margin-right : 1px; }
+
+/* 12.COMPLEMENTARY */
+
+div[role="complementary"] section {
+float : left;
+width : 48.33%;
+padding : 1.4em 0; }
+
+div[role="complementary"] section.extras {
+clear : left;
+margin-right : 3.33%; }
+
+div[role="complementary"] nav { 
+float : left;
+width : 48.33%;
+margin-right : 3.33%;
+padding : 1.4em 0; }
+
+div[role="complementary"] h2 {
+margin : 0; }
+
+/* 13.CONTENTINFO */
+/* 14.GLOBAL OBJECTS */
+
+div[role="main"] h2.fourohfour {
+font-size : 7.85em;
+margin-bottom : .3em; }
+
+/* 15.VENDOR-SPECIFIC */
+/* 16.TEMPLATE SPECIFICS */
+/* 17.MODERNIZR */
+
+}/*/mediaquery*/
+
+/*600px __________________________________________________________________________________________________________ */
+@media only screen and (min-width: 600px) {
+
+/* 1.ROOT */
+/* 2.HEADINGS */
+/* 3.TYPOGRAPHY */
+/* 4.LINKS */
+/* 5.FIGURES & IMAGES */
+/* 6.TABLES */
+/* 7.FORMS */
+/* 8.BANNER */
+
+header[role="banner"] h1 {
+float : left; }
+
+/* 9.NAVIGATION */
+/* 10.CONTENT */
+/* 11.MAIN */
+/* 12.COMPLEMENTARY */
+/* 13.CONTENTINFO */
+/* 14.GLOBAL OBJECTS */
+/* 15.VENDOR-SPECIFIC */
+/* 16.TEMPLATE SPECIFICS */
+/* 17.MODERNIZR */
+
+}/*/mediaquery*/
+
+/*768px __________________________________________________________________________________________________________ */
+@media only screen and (min-width: 768px) {
+
+/* 1.ROOT */
+/* 2.HEADINGS */
+/* 3.TYPOGRAPHY */
+/* 4.LINKS */
+/* 5.FIGURES & IMAGES */
+/* 6.TABLES */
+/* 7.FORMS */
+/* 8.BANNER */
+/* 9.NAVIGATION */
+/* 10.CONTENT */
+/* 11.MAIN */
+
+.archive header {
+padding-right : 25.78%; }
+
+aside li, aside p {
+width : 22.44%;
+margin-right : 3.33%; }
+
+aside .view {
+clear : both;
+width : 70.65% }
+
+aside li:nth-child(even) {
+margin-right : 0; }
+
+aside p:nth-child(even) {
+margin-right : 0; }
+
+.palette li {
+width : 14px;
+margin : 3px 1px; }
+
+.palette li:nth-child(even) {
+margin-right : 1px; }
+
+/* 12.COMPLEMENTARY */
+
+div[role="complementary"] section {
+width : 22.44%;
+padding : 1.4em 0;
+margin-right : 3.33%; }
+
+div[role="complementary"] section:last-child {
+margin-right : 0; }
+
+div[role="complementary"] section.extras {
+clear : none; }
+
+div[role="complementary"] nav {
+width : 22.44%;
+padding : 1.4em 0;
+margin-right : 3.33%; }
+
+/* 13.CONTENTINFO */
+/* 14.GLOBAL OBJECTS */
+
+div[role="main"] h2.fourohfour {
+font-size : 10em; }
+
+/* 15.VENDOR-SPECIFIC */
+/* 16.TEMPLATE SPECIFICS */
+/* 17.MODERNIZR */
+
+}/*/mediaquery*/
+
+/*992px __________________________________________________________________________________________________________ */
+@media only screen and (min-width: 992px) {
+
+/* 1.ROOT */
+/* 2.HEADINGS */
+/* 3.TYPOGRAPHY */
+/* 4.LINKS */
+/* 5.FIGURES & IMAGES */
+/* 6.TABLES */
+/* 7.FORMS */
+/* 8.BANNER */
+/* 9.NAVIGATION */
+/* 10.CONTENT */
+/* 11.MAIN */
+
+.project img {
+width : 73.89%;
+float : left;
+margin : 0 0 1.4em; }
+
+.project figure img {
+margin-right : 3.33%; }
+
+.project figcaption {
+max-width : 100%; }
+
+aside {
+float : right;
+width : 22.56%;
+border-bottom : 0; }
+
+aside li, aside p {
+width : auto;
+float : none;
+margin-right : 0; }
+
+.palette li {
+width : 14px;
+margin : 3px 1px;
+float : left; }
+
+/* 12.COMPLEMENTARY */
+/* 13.CONTENTINFO */
+/* 14.GLOBAL OBJECTS */
+/* 15.VENDOR-SPECIFIC */
+/* 16.TEMPLATE SPECIFICS */
+/* 17.MODERNIZR */
+
+}/*/mediaquery*/
+
+/*1382px __________________________________________________________________________________________________________ */
+@media only screen and (min-width: 1382px) {
+
+/* 1.ROOT */
+/* 2.HEADINGS */
+/* 3.TYPOGRAPHY */
+/* 4.LINKS */
+/* 5.FIGURES & IMAGES */
+/* 6.TABLES */
+/* 7.FORMS */
+/* 8.BANNER */
+/* 9.NAVIGATION */
+/* 10.CONTENT */
+/* 11.MAIN */
+/* 12.COMPLEMENTARY */
+/* 13.CONTENTINFO */
+/* 14.GLOBAL OBJECTS */
+/* 15.VENDOR-SPECIFIC */
+/* 16.TEMPLATE SPECIFICS */
+/* 17.MODERNIZR */
+
+}/*/mediaquery*/
+
+/*2x __________________________________________________________________________________________________________ */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+
+/* 1.ROOT */
+/* 2.HEADINGS */
+/* 3.TYPOGRAPHY */
+/* 4.LINKS */
+/* 5.FIGURES & IMAGES */
+/* 6.TABLES */
+/* 7.FORMS */
+/* 8.BANNER */
+/* 9.NAVIGATION */
+/* 10.CONTENT */
+/* 11.MAIN */
+/* 12.COMPLEMENTARY */
+/* 13.CONTENTINFO */
+/* 14.GLOBAL OBJECTS */
+/* 15.VENDOR-SPECIFIC */
+/* 16.TEMPLATE SPECIFICS */
+/* 17.MODERNIZR */
+
+}/*/mediaquery*/
+
+/* 
+Sources: 
+http://meyerweb.com/eric/tools/css/reset
+http://people.opera.com/patrickl/experiments/keyboard/test
+http://gist.github.com/413930
+http://pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap
+http://sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars
+http://tjkdesign.com/ez-css/css/base.css
+http://viget.com/inspire/styling-the-button-element-in-internet-explorer
+http://code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing
+http://html5doctor.com/html-5-reset-stylesheet/
+http://praegnanz.de/weblog/htmlcssjs-kickstart/
+http://camendesign.com/design/
+http://yui.yahooapis.com/2.8.1/build/base/base.css
+http://webaim.org/techniques/css/invisiblecontent/
+http://drupal.org/node/897638
+*/

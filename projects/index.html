@@ -1,0 +1,33 @@
+---
+layout: archive
+title: Projects
+description: A selection of my recent web design projects. Striking, accessible, and future friendly.
+---		
+		
+		<header>
+
+			<h2><a href="/projects">Projects</a></h2>
+			
+			<p>This is a selection of my recent web design and development work. I create striking, accessible, and <a href="http://futurefriend.ly/">future friendly</a> websites that are a pleasure to use.</p>
+			
+			<p><a class="contact" href="mailto:alexlande@gmail.com?subject=Let's work together">Let's work together.</a></p>
+			
+		</header>
+		
+		{% for post in site.categories.projects | limit: 6 %}
+		
+			<article>
+			
+				<a href="{{ post.url }}">
+				
+					<time datetime="2011-09-19" pubdate>{{ post.date | date:"%B %d, %Y" }}</time>
+			
+					<h3>{{ post.title }}</h3>					
+			
+					<img src="http://src.sencha.io/{{ post.image }}" />
+					
+				</a>
+			
+			</article>
+			
+		{% endfor %}
