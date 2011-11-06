@@ -733,9 +733,9 @@ widows : 3; }
 
 h2, h3 { 
 page-break-after : avoid; }
-}/*/mediaquery*/
+}
 
-/*480px __________________________________________________________________________________________________________ */
+/* 480px */
 @media only screen and (min-width: 480px) {
 
 /* 1.ROOT */
@@ -898,9 +898,9 @@ margin-bottom : .3em; }
 /* 16.TEMPLATE SPECIFICS */
 /* 17.MODERNIZR */
 
-}/*/mediaquery*/
+}
 
-/*600px __________________________________________________________________________________________________________ */
+/* 600px */
 @media only screen and (min-width: 600px) {
 
 /* 1.ROOT */
@@ -925,9 +925,9 @@ float : left; }
 /* 16.TEMPLATE SPECIFICS */
 /* 17.MODERNIZR */
 
-}/*/mediaquery*/
+}
 
-/*768px __________________________________________________________________________________________________________ */
+/* 768px */
 @media only screen and (min-width: 768px) {
 
 /* 1.ROOT */
@@ -994,9 +994,9 @@ font-size : 10em; }
 /* 16.TEMPLATE SPECIFICS */
 /* 17.MODERNIZR */
 
-}/*/mediaquery*/
+}
 
-/*992px __________________________________________________________________________________________________________ */
+/* 992px */
 @media only screen and (min-width: 992px) {
 
 /* 1.ROOT */
@@ -1044,68 +1044,4 @@ float : left; }
 /* 16.TEMPLATE SPECIFICS */
 /* 17.MODERNIZR */
 
-}/*/mediaquery*/
-
-/*1382px __________________________________________________________________________________________________________ */
-@media only screen and (min-width: 1382px) {
-
-/* 1.ROOT */
-/* 2.HEADINGS */
-/* 3.TYPOGRAPHY */
-/* 4.LINKS */
-/* 5.FIGURES & IMAGES */
-/* 6.TABLES */
-/* 7.FORMS */
-/* 8.BANNER */
-/* 9.NAVIGATION */
-/* 10.CONTENT */
-/* 11.MAIN */
-/* 12.COMPLEMENTARY */
-/* 13.CONTENTINFO */
-/* 14.GLOBAL OBJECTS */
-/* 15.VENDOR-SPECIFIC */
-/* 16.TEMPLATE SPECIFICS */
-/* 17.MODERNIZR */
-
-}/*/mediaquery*/
-
-/*2x __________________________________________________________________________________________________________ */
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-
-/* 1.ROOT */
-/* 2.HEADINGS */
-/* 3.TYPOGRAPHY */
-/* 4.LINKS */
-/* 5.FIGURES & IMAGES */
-/* 6.TABLES */
-/* 7.FORMS */
-/* 8.BANNER */
-/* 9.NAVIGATION */
-/* 10.CONTENT */
-/* 11.MAIN */
-/* 12.COMPLEMENTARY */
-/* 13.CONTENTINFO */
-/* 14.GLOBAL OBJECTS */
-/* 15.VENDOR-SPECIFIC */
-/* 16.TEMPLATE SPECIFICS */
-/* 17.MODERNIZR */
-
-}/*/mediaquery*/
-
-/* 
-Sources: 
-http://meyerweb.com/eric/tools/css/reset
-http://people.opera.com/patrickl/experiments/keyboard/test
-http://gist.github.com/413930
-http://pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap
-http://sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars
-http://tjkdesign.com/ez-css/css/base.css
-http://viget.com/inspire/styling-the-button-element-in-internet-explorer
-http://code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing
-http://html5doctor.com/html-5-reset-stylesheet/
-http://praegnanz.de/weblog/htmlcssjs-kickstart/
-http://camendesign.com/design/
-http://yui.yahooapis.com/2.8.1/build/base/base.css
-http://webaim.org/techniques/css/invisiblecontent/
-http://drupal.org/node/897638
-*/
+}

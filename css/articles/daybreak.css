@@ -82,7 +82,7 @@ div[role="complementary"], footer {
 position : relative;
 z-index : 2; }
 
-/*480px __________________________________________________________________________________________________________ */
+/* 480px */
 @media only screen and (min-width: 480px) {
 
 article {
@@ -98,4 +98,4 @@ line-height : .72em; }
 font-size : 7.375em;
 margin-bottom : 0.2em; }
 
-}/*/mediaquery*/
+}
