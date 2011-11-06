@@ -791,6 +791,11 @@ margin : 0 auto;
 width : 90%;
 max-width : 900px; }
 
+.ie7 .archive {
+margin : 0 auto;
+width : 90%;
+max-width : 900px; }
+
 div[role="main"] section {
 width : 48.33%;
 float : left;
