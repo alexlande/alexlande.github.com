@@ -11,6 +11,14 @@
     <loc>http://www.alexlande.com/about/</loc>
     <changefreq>yearly</changefreq>
   </url>
+  <url>
+    <loc>http://www.alexlande.com/projects/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.alexlande.com/articles/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
   {% for post in site.categories.articles limit:20 %}
   <url>
     <loc>http://www.alexlande.com/articles{{ post.url }}/</loc>
