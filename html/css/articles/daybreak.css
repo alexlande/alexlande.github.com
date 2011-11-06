@@ -4,9 +4,7 @@ background-image : -moz-linear-gradient(top, rgba(40,40,40,0.5), rgba(255,255,25
 background-image : -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(40,40,40,0.5)), to(rgba(255,255,255,0.1)));
 background-image : -webkit-linear-gradient(top, rgba(40,40,40,0.5), rgba(255,255,255,0.1)); 
 background-image : -ms-linear-gradient(top, rgba(40,40,40,0.5), rgba(255,255,255,0.1));
-background-image : -o-linear-gradient(top, rgba(40,40,40,0.5), rgba(255,255,255,0.1));
-
-}
+background-image : -o-linear-gradient(top, rgba(40,40,40,0.5), rgba(255,255,255,0.1)); }
 
 div[role="main"] {
 padding : 1.6875em 0 0; }
@@ -16,8 +14,8 @@ max-width : 553px;
 margin : 0 5%; }
 
 div[role="main"] h2 {
-font-size : 3em;
-margin-bottom : 0.4em;
+font-size : 2.2em;
+margin-bottom : 0.8em;
 margin-left : -3px;
 line-height : .74em;
 color : #DEDEDE;
@@ -36,6 +34,7 @@ article p {
 -webkit-hyphenate-limit-after : 1;
 -webkit-hyphenate-limit-before : 3;
 -moz-hyphens : auto;
+hyphens : auto;
 text-align : justify;
 font-family : chaparral-pro,serif;
 font-size : 1.125em; /* 18 / 16 */
@@ -46,6 +45,8 @@ color : rgba(255, 255, 255, 0.8);
 text-shadow : 1px 1px 1px rgba(40,40,40,0.6);
 position : relative;
 z-index : 2; }
+
+.no-hyphenate
 
 div[role="main"] a, div[role="main"] a:visited {
 color : #ffe184;
