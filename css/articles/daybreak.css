@@ -99,3 +99,6 @@ font-size : 7.375em;
 margin-bottom : 0.2em; }
 
 }
+
+.ie7 body {
+color : #DEDEDE; }
