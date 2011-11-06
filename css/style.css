@@ -355,11 +355,9 @@ transition : all 0.3s ease;
 -webkit-border-radius : 3px;
 border-radius : 3px; }
 
-div[role="main"].archive article a {
-margin : 0; }
-
 .archive article a, .archive a.more {
 padding : 16px 5%;
+margin : 0;
 display : block;
 -moz-transition : all 0.3s ease-in-out;
 -webkit-transition : all 0.3s ease-in-out;
