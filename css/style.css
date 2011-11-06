@@ -355,7 +355,7 @@ transition : all 0.3s ease;
 -webkit-border-radius : 3px;
 border-radius : 3px; }
 
-div[role="main"].archive a {
+div[role="main"].archive article a {
 margin : 0; }
 
 .archive article a, .archive a.more {
