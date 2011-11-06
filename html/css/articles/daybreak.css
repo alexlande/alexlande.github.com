@@ -46,8 +46,6 @@ text-shadow : 1px 1px 1px rgba(40,40,40,0.6);
 position : relative;
 z-index : 2; }
 
-.no-hyphenate
-
 div[role="main"] a, div[role="main"] a:visited {
 color : #ffe184;
 border : 0;
