@@ -1,0 +1,50 @@
+/* 768px */
+
+/* 11.MAIN */
+
+.archive header {
+padding-right : 25.78%; }
+
+aside li, aside p {
+width : 22.44%;
+margin-right : 3.33%; }
+
+aside .view {
+clear : both;
+width : 70.65% }
+
+aside li:nth-child(even) {
+margin-right : 0; }
+
+aside p:nth-child(even) {
+margin-right : 0; }
+
+.palette li {
+width : 14px;
+margin : 3px 1px; }
+
+.palette li:nth-child(even) {
+margin-right : 1px; }
+
+/* 12.COMPLEMENTARY */
+
+[role="complementary"] section {
+width : 22.44%;
+padding : 1.4em 0;
+margin-right : 3.33%; }
+
+[role="complementary"] section:last-child {
+margin-right : 0; }
+
+[role="complementary"] section.extras {
+clear : none; }
+
+[role="complementary"] nav {
+width : 22.44%;
+padding : 1.4em 0;
+margin-right : 3.33%; }
+
+/* 14.GLOBAL OBJECTS */
+
+[role="main"] h2.fourohfour {
+font-size : 10em; }
