@@ -108,7 +108,7 @@ margin : 0; }
 margin-left : -5px;
 line-height : .72em; }
 
-.ie6 .wf-active [role="main"] h2, .ie7 .wf-active [role="main"] h2, .ie8 .wf-active [role="main"] h2 {
+.ie6.wf-active [role="main"] h2, .ie7.wf-active [role="main"] h2, .ie8.wf-active [role="main"] h2 {
 font-size : 7.375em;
 margin-bottom : 0.2em; }
 
@@ -116,4 +116,4 @@ margin-bottom : 0.2em; }
 display : none; }
 
 .ie6 a, .ie6 a:visited {
-border : 1px solid #35586B; }
+border : 0 none !important; }
