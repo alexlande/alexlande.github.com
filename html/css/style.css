@@ -246,7 +246,7 @@ background-color : transparent; }
 
 /* 8.BANNER */
 
-header[role="banner"] {
+[role="banner"] {
 color : rgb(255,255,255);
 background : rgb(40,40,40);
 border-bottom : 1px solid #000000;
@@ -257,68 +257,68 @@ box-shadow : 0 0 10px rgba(40,40,40,0.1);
 text-shadow : 1px 1px 1px #000000;
 border-top : 2px solid #21ABFB; }
 
-.home header[role="banner"] {
+.home [role="banner"] {
 padding : 4px 0 0; }
 
-header[role="banner"] a, header[role="banner"] a:visited {
+[role="banner"] a, [role="banner"] a:visited {
 color : #21ABFB;
 -moz-transition : all 0.3s ease;
 -webkit-transition : all 0.3s ease;
 -o-transition : all 0.3s ease;
 transition : all 0.3s ease; }
 
-header[role="banner"] a:hover {
+[role="banner"] a:hover {
 color : rgb(255,255,255); }
 
-header[role="banner"] a:active {
+[role="banner"] a:active {
 color : rgb(255,255,255);
 text-decoration : underline; }
 
-header[role="banner"] h1 {
+[role="banner"] h1 {
 line-height : 1.2;
 float : left;
 margin-top : 4px; }
 
-.home header[role="banner"] h1 {
+.home [role="banner"] h1 {
 float : none;
 font-size : 3em;
 margin-top : 0; }
 
-header[role="banner"] h1 a, header[role="banner"] h1 a:visited {
+[role="banner"] h1 a, [role="banner"] h1 a:visited {
 color : rgb(255,255,255);
 display : inline-block; }
 
-header[role="banner"] h1 a:hover {
+[role="banner"] h1 a:hover {
 text-shadow : 2px 2px 1px #1777AF; }
 
-header[role="banner"] h1 a:active {
+[role="banner"] h1 a:active {
 text-decoration : none; }
 
-header[role="banner"] h2 {
+[role="banner"] h2 {
 font : 100%/1.4 proxima-nova, sans-serif;
 text-transform : none;
 margin-bottom : 1.4em; }
 
 /* 9.NAVIGATION */
 
-header[role="banner"] nav {
+[role="banner"] nav {
 margin : 0;
 clear : left; }
 
-header[role="banner"] ul {
+[role="banner"] ul {
 list-style : none;
 margin : 0;
 width : 100%;
 padding : 0; }
 
-header[role="banner"] li {
+[role="banner"] li {
 float : left;
 margin-right : 9.49%; }
 
-header[role="banner"] li a, header[role="banner"] li a:visited {
+[role="banner"] li a, [role="banner"] li a:visited {
 color : #BCBCBC; }
 
-header[role="banner"] li a:hover {
+[role="banner"] li a:hover {
 color : rgb(255,255,255); }
 
 /* 10.CONTENT */
@@ -329,22 +329,22 @@ margin : 0 auto; }
 
 /* 11.MAIN */
 
-div[role="main"] {
+[role="main"] {
 padding : 1.4em 0; }
 
-div[role="main"] section {
+[role="main"] section {
 padding : 0 0 1.4em; }
 
-div[role="main"] section:last-child {
+[role="main"] section:last-child {
 padding : 0; }
 
-div[role="main"] h2 {
+[role="main"] h2 {
 margin : 0 5% 0.46em; }
 
-.home div[role="main"] h2 {
+.home [role="main"] h2 {
 margin : 0 5%; }
 
-div[role="main"] a {
+[role="main"] a {
 border : 1px solid transparent;
 margin : 0 -1px;
 -moz-transition : all 0.3s ease;
@@ -364,7 +364,7 @@ display : block;
 -o-transition : all 0.3s ease-in-out;
 transition : all 0.3s ease-in-out; }
 
-div[role="main"] a:hover {
+[role="main"] a:hover {
 background : #E9E9E9;
 text-shadow : 1px 1px 1px rgba(255,255,255,1);
 -moz-box-shadow : inset 0 0 10px rgba(40,40,40,0.1);
@@ -372,7 +372,7 @@ text-shadow : 1px 1px 1px rgba(255,255,255,1);
 box-shadow : inset 0 0 10px rgba(40,40,40,0.1);
 border : 1px solid #D5D5D5; }
 
-div[role="main"] a:active{
+[role="main"] a:active{
 background : #D4D4D4;
 text-shadow : 1px 1px 1px rgba(255,255,255,1);
 -moz-box-shadow : inset 0 0 10px rgba(40,40,40,0.1);
@@ -384,7 +384,7 @@ border : 1px solid #B2B2B2; }
 text-align : center;
 clear : both; }
 
-div[role="main"] h2 a {
+[role="main"] h2 a {
 padding-right : 36px;
 background : url("../img/arrow.png") no-repeat scroll right 4px transparent;
 display : inline-block;
@@ -395,7 +395,7 @@ color : rgb(40,40,40);
 transition : all 0.1s ease;
 border : 1px solid transparent; }
 
-div[role="main"] h2 a:hover {
+[role="main"] h2 a:hover {
 color : #1777AF;
 background : url("../img/arrow2.png") no-repeat scroll right 4px transparent;
 border : 1px solid transparent;
@@ -404,7 +404,7 @@ border : 1px solid transparent;
 box-shadow : none;
 text-shadow : none; }
 
-div[role="main"] h2 a:active {
+[role="main"] h2 a:active {
 text-decoration : underline;
 -moz-box-shadow : none;
 -webkit-box-shadow : none;
@@ -498,7 +498,7 @@ margin : 0 0 0.46em; }
 
 /* 12.COMPLEMENTARY */
 
-div[role="complementary"] {
+[role="complementary"] {
 padding : 1.4em 0;
 color : rgb(255,255,255);
 background : #282828; 
@@ -508,37 +508,37 @@ border-top : 1px solid #000000;
 -webkit-box-shadow : 0 -3px 10px rgba(40, 40, 40, 0.1);
 box-shadow : 0 -3px 10px rgba(40, 40, 40, 0.1); }
 
-div[role="complementary"] h2 {
+[role="complementary"] h2 {
 margin : 0 5%; }
 
-div[role="complementary"] p {
+[role="complementary"] p {
 margin : 0; }
 
-div[role="complementary"] a {
+[role="complementary"] a {
 -moz-transition : all 0.3s ease;
 -webkit-transition : all 0.3s ease;
 -o-transition : all 0.3s ease;
 transition : all 0.3s ease;
 color : #21ABFB; }
 
-div[role="complementary"] a:visited {
+[role="complementary"] a:visited {
 color : #21ABFB; }
 
-div[role="complementary"] a:hover {
+[role="complementary"] a:hover {
 color : rgb(255,255,255); }
 
-div[role="complementary"] a:active {
+[role="complementary"] a:active {
 color : rgb(255,255,255);
 text-decoration : underline; }
 
-div[role="complementary"] ul {
+[role="complementary"] ul {
 list-style : none;
 margin-bottom : 0; }
 
-div[role="complementary"] section {
+[role="complementary"] section {
 padding : 1.4em 0; }
 
-div[role="complementary"] nav {
+[role="complementary"] nav {
 padding : 1.4em 0; }
 
 /* 13.CONTENTINFO */
@@ -638,13 +638,13 @@ textarea  {
 -o-box-sizing : border-box;
 box-sizing : border-box; }
 
-.ie6 div[role="main"] a {
+.ie6 [role="main"] a {
 border : 1px solid #FFFFFF; }
 
-.ie6 div[role="main"] h2 a:hover {
+.ie6 [role="main"] h2 a:hover {
 border : 1px solid #FFFFFF; }
 
-.ie6 div[role="main"] h2 a:active {
+.ie6 [role="main"] h2 a:active {
 border : 1px solid #FFFFFF; }
 
 /* Non-semantic helper classes */
@@ -750,11 +750,11 @@ page-break-after : avoid; }
 /* 1.ROOT */
 /* 2.HEADINGS */
 
-.home header[role="banner"] h1 {
+.home [role="banner"] h1 {
 text-shadow : 3px 3px 1px #000000;
 font-size : 6em; }
 
-.home header[role="banner"] {
+.home [role="banner"] {
 padding : 0; }
 
 /* 3.TYPOGRAPHY */
@@ -764,23 +764,23 @@ padding : 0; }
 /* 7.FORMS */
 /* 8.BANNER */
 
-header[role="banner"] {
+[role="banner"] {
 padding : 0; }
  
 /* 9.NAVIGATION */
 
-header[role="banner"] nav {
+[role="banner"] nav {
 margin-left : 25.78%;
 width : 74.22%;
 clear : none; }
 
-header[role="banner"] ul {
+[role="banner"] ul {
 list-style : none;
 float : left;
 margin : 0;
 padding : 0; }
 
-header[role="banner"] li {
+[role="banner"] li {
 float : left;
 margin-top : 13px;
 margin-bottom : 10px;
@@ -789,29 +789,29 @@ line-height : 0.8;
 width : 12.87%;
 max-width : 53px; }
 
-header[role="banner"] li a {
+[role="banner"] li a {
 padding : 20px 0 8px; }
 
 /* 10.CONTENT */
 /* 11.MAIN */
 
-div[role="main"] {
+[role="main"] {
 margin : 0 auto;
 width : 90%;
 max-width : 900px; }
 
-div[role="main"] section {
+[role="main"] section {
 width : 48.33%;
 float : left;
 padding : 0; }
 
-div[role="main"] section:first-child {
+[role="main"] section:first-child {
 margin-right : 3.33%; }
 
-div[role="main"] h2 {
+[role="main"] h2 {
 margin : 0 0 0.46em; }
 
-.home div[role="main"] h2 {
+.home [role="main"] h2 {
 margin : 0; }
 
 .archive header {
@@ -878,28 +878,28 @@ margin-right : 1px; }
 
 /* 12.COMPLEMENTARY */
 
-div[role="complementary"] section {
+[role="complementary"] section {
 float : left;
 width : 48.33%;
 padding : 1.4em 0; }
 
-div[role="complementary"] section.extras {
+[role="complementary"] section.extras {
 clear : left;
 margin-right : 3.33%; }
 
-div[role="complementary"] nav { 
+[role="complementary"] nav { 
 float : left;
 width : 48.33%;
 margin-right : 3.33%;
 padding : 1.4em 0; }
 
-div[role="complementary"] h2 {
+[role="complementary"] h2 {
 margin : 0; }
 
 /* 13.CONTENTINFO */
 /* 14.GLOBAL OBJECTS */
 
-div[role="main"] h2.fourohfour {
+[role="main"] h2.fourohfour {
 font-size : 7.85em;
 margin-bottom : .3em; }
 
@@ -977,18 +977,18 @@ margin-right : 1px; }
 
 /* 12.COMPLEMENTARY */
 
-div[role="complementary"] section {
+[role="complementary"] section {
 width : 22.44%;
 padding : 1.4em 0;
 margin-right : 3.33%; }
 
-div[role="complementary"] section:last-child {
+[role="complementary"] section:last-child {
 margin-right : 0; }
 
-div[role="complementary"] section.extras {
+[role="complementary"] section.extras {
 clear : none; }
 
-div[role="complementary"] nav {
+[role="complementary"] nav {
 width : 22.44%;
 padding : 1.4em 0;
 margin-right : 3.33%; }
@@ -996,7 +996,7 @@ margin-right : 3.33%; }
 /* 13.CONTENTINFO */
 /* 14.GLOBAL OBJECTS */
 
-div[role="main"] h2.fourohfour {
+[role="main"] h2.fourohfour {
 font-size : 10em; }
 
 /* 15.VENDOR-SPECIFIC */

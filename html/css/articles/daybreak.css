@@ -6,14 +6,14 @@ background-image : -webkit-linear-gradient(top, rgba(40,40,40,0.5), rgba(255,255
 background-image : -ms-linear-gradient(top, rgba(40,40,40,0.5), rgba(255,255,255,0.1));
 background-image : -o-linear-gradient(top, rgba(40,40,40,0.5), rgba(255,255,255,0.1)); }
 
-div[role="main"] {
+[role="main"] {
 padding : 1.6875em 0 0; }
 
 article {
 max-width : 553px;
 margin : 0 5%; }
 
-div[role="main"] h2 {
+[role="main"] h2 {
 font-size : 3em;
 margin-bottom : 0.4em;
 margin-left : -3px;
@@ -24,7 +24,7 @@ text-shadow : 0px 0px 30px rgba(255,255,255,0.35),
 			  2px 2px 1px rgba(40,40,40,0.6),
 			  -2px -2px 1px rgba(40,40,40,0.6); }
 			  
-.wf-active div[role="main"] h2 {
+.wf-active [role="main"] h2 {
 font-size : 4.85em;
 margin-bottom : 0.32em; }
 
@@ -46,13 +46,13 @@ text-shadow : 1px 1px 1px rgba(40,40,40,0.6);
 position : relative;
 z-index : 2; }
 
-div[role="main"] a, div[role="main"] a:visited {
+[role="main"] a, div[role="main"] a:visited {
 color : #ffe184;
 border : 0;
 margin : 0;
 }
 
-div[role="main"] a:hover, div[role="main"] a:active {
+[role="main"] a:hover, div[role="main"] a:active {
 background : transparent;
 box-shadow : none;
 border : 0;
@@ -78,7 +78,7 @@ background : no-repeat center 0; }
 bottom : -50px;
 background : url('/img/daybreak/burst.png') no-repeat center 0; }
 
-div[role="complementary"], footer {
+[role="complementary"], footer {
 position : relative;
 z-index : 2; }
 
@@ -88,7 +88,7 @@ z-index : 2; }
 article {
 margin : 0; }
 
-div[role="main"] h2 {
+[role="main"] h2 {
 font-size : 4.5em;
 margin-left : -5px;
 margin-bottom : 0.4em;
