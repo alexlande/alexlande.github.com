@@ -46,19 +46,17 @@ text-shadow : 1px 1px 1px rgba(40,40,40,0.6);
 position : relative;
 z-index : 2; }
 
-[role="main"] a, div[role="main"] a:visited {
+[role="main"] a, [role="main"] a:visited {
 color : #ffe184;
 border : 0;
-margin : 0;
-}
+margin : 0; }
 
-[role="main"] a:hover, div[role="main"] a:active {
+[role="main"] a:hover, [role="main"] a:active {
 background : transparent;
 box-shadow : none;
 border : 0;
 text-shadow : 1px 1px 1px rgba(40, 40, 40, 0.6);
-text-decoration : underline;
-}
+text-decoration : underline; }
 
 #sun {
 height : 300px;
@@ -115,3 +113,9 @@ line-height : .72em; }
 .ie6 .wf-active div[role="main"] h2, .ie7 .wf-active div[role="main"] h2, .ie8 .wf-active div[role="main"] h2 {
 font-size : 7.375em;
 margin-bottom : 0.2em; }
+
+.ie6 #sun {
+display : none; }
+
+.ie6 a, .ie6 a:hover {
+border : 0 none; }
