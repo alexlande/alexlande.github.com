@@ -100,5 +100,18 @@ margin-bottom : 0.2em; }
 
 }
 
-.ie7 body {
+.ie6 body, .ie7 body {
 color : #DEDEDE; }
+
+.ie6 article, .ie7 article, .ie8 article {
+margin : 0; }
+
+.ie6 [role="main"] h2, .ie7 [role="main"] h2, .ie8 [role="main"] h2 {
+font-size : 4.5em;
+margin-left : -5px;
+margin-bottom : 0.4em;
+line-height : .72em; }
+
+.ie6 .wf-active div[role="main"] h2, .ie7 .wf-active div[role="main"] h2, .ie8 .wf-active div[role="main"] h2 {
+font-size : 7.375em;
+margin-bottom : 0.2em; }
