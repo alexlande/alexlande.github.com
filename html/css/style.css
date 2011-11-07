@@ -638,6 +638,15 @@ textarea  {
 -o-box-sizing : border-box;
 box-sizing : border-box; }
 
+.ie6 [role="main"], .ie7 [role="main"], .ie8 [role="main"] {
+width : 900px; }
+
+.ie6 .container, .ie7 .container, .ie8 .container {
+width : 900px; }
+
+.ie6 footer, .ie7 footer, .ie8 footer {
+width : 900px; }
+
 .ie6 [role="main"] a {
 border : 1px solid #FFFFFF; }
 
