@@ -652,7 +652,13 @@ width : 900px; }
 width : 668px; }
 
 .ie6 aside {
-width : 22%; }
+width : 100%;
+float : none; }
+
+.ie6 aside li, .ie6 aside p {
+float : left;
+margin-right : 3.33%;
+width : 22.44%; }
 
 .ie6 [role="complementary"] section, .ie6 [role="complementary"] nav {
 width : 20%; }
