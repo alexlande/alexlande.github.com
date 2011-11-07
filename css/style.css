@@ -644,8 +644,9 @@ width : 900px; }
 .ie6 .container, .ie7 .container, .ie8 .container {
 width : 900px; }
 
-.ie6 footer, .ie7 footer, .ie8 footer {
-width : 900px; }
+.ie6 footer p, .ie7 footer p, .ie8 footer p {
+width : 900px;
+margin : 0 auto; }
 
 .ie6 [role="main"] a {
 border : 1px solid #FFFFFF; }
