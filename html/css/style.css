@@ -641,11 +641,18 @@ box-sizing : border-box; }
 .ie6 [role="main"], .ie7 [role="main"], .ie8 [role="main"] {
 width : 900px; }
 
-.ie6 [role="banner"] {
-height : 36px; }
+.ie6 [role="banner"] nav {
+margin : 0;
+width : 100%; }
 
 .ie6 .container, .ie7 .container, .ie8 .container {
 width : 900px; }
+
+.ie6 .study {
+width : 668px; }
+
+.ie6 aside {
+width : 22%; }
 
 .ie6 [role="complementary"] section, .ie6 [role="complementary"] nav {
 width : 20%; }
