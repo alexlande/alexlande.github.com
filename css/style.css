@@ -388,18 +388,18 @@ clear : both; }
 
 [role="main"] h2 a {
 padding-right : 36px;
-background : url("../img/arrow.png") no-repeat scroll right 4px transparent;
+background : url("../img/arrow.png") no-repeat scroll right 5px transparent;
 display : inline-block;
 color : rgb(40,40,40);
--moz-transition : all 0.1s ease;
--webkit-transition : all 0.1s ease;
--o-transition : all 0.1s ease;
-transition : all 0.1s ease;
+-moz-transition : color 0.1s ease;
+-webkit-transition : color 0.1s ease;
+-o-transition : color 0.1s ease;
+transition : color 0.1s ease;
 border : 1px solid transparent; }
 
 [role="main"] h2 a:hover {
 color : #1777AF;
-background : url("../img/arrow2.png") no-repeat scroll right 4px transparent;
+background : url("../img/arrow.png") no-repeat scroll right -43px transparent;
 border : 1px solid transparent;
 -moz-box-shadow : none;
 -webkit-box-shadow : none;
@@ -411,7 +411,7 @@ text-decoration : underline;
 -moz-box-shadow : none;
 -webkit-box-shadow : none;
 box-shadow : none;
-background : url("../img/arrow2.png") no-repeat scroll right 4px transparent;
+background : url("../img/arrow.png") no-repeat scroll right -43px transparent;
 border : 1px solid transparent; }
 
 article h3 {
