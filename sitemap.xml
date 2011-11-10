@@ -23,7 +23,6 @@
   <url>
     <loc>http://www.alexlande.com/articles{{ post.url }}</loc>
     <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   {% endfor %}
@@ -31,7 +30,6 @@
   <url>
     <loc>http://www.alexlande.com/projects{{ post.url }}</loc>
     <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   {% endfor %}
