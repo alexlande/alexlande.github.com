@@ -21,7 +21,7 @@
   </url>
   {% for post in site.categories.articles limit:20 %}
   <url>
-    <loc>http://www.alexlande.com/articles{{ post.url }}/</loc>
+    <loc>http://www.alexlande.com/articles{{ post.url }}</loc>
     <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -29,7 +29,7 @@
   {% endfor %}
     {% for post in site.categories.projects limit:20 %}
   <url>
-    <loc>http://www.alexlande.com/projects{{ post.url }}/</loc>
+    <loc>http://www.alexlande.com/projects{{ post.url }}</loc>
     <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
