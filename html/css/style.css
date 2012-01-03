@@ -774,8 +774,6 @@ h2, h3 {
 page-break-after : avoid; }
 }
 
-}
-
 /* 480px */
 @media only screen and (min-width: 480px) {
 
