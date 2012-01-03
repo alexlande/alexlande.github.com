@@ -246,7 +246,7 @@ background-color : transparent; }
 
 /* 8.BANNER */
 
-[role="banner"] {
+.banner {
 color : rgb(255,255,255);
 background : rgb(40,40,40);
 border-bottom : 1px solid #000000;
@@ -257,68 +257,68 @@ box-shadow : 0 0 10px rgba(40,40,40,0.1);
 text-shadow : 1px 1px 1px #000000;
 border-top : 2px solid #21ABFB; }
 
-.home [role="banner"] {
+.home .banner {
 padding : 4px 0 0; }
 
-[role="banner"] a, [role="banner"] a:visited {
+.banner a, .banner a:visited {
 color : #21ABFB;
 -moz-transition : all 0.3s ease;
 -webkit-transition : all 0.3s ease;
 -o-transition : all 0.3s ease;
 transition : all 0.3s ease; }
 
-[role="banner"] a:hover {
+.banner a:hover {
 color : rgb(255,255,255); }
 
-[role="banner"] a:active {
+.banner a:active {
 color : rgb(255,255,255);
 text-decoration : underline; }
 
-[role="banner"] h1 {
+.banner h1 {
 line-height : 1.2;
 float : left;
 margin-top : 4px; }
 
-.home [role="banner"] h1 {
+.home .banner h1 {
 float : none;
 font-size : 3em;
 margin-top : 0; }
 
-[role="banner"] h1 a, [role="banner"] h1 a:visited {
+.banner h1 a, .banner h1 a:visited {
 color : rgb(255,255,255);
 display : inline-block; }
 
-[role="banner"] h1 a:hover {
+.banner h1 a:hover {
 text-shadow : 2px 2px 1px #1777AF; }
 
-[role="banner"] h1 a:active {
+.banner h1 a:active {
 text-decoration : none; }
 
-[role="banner"] h2 {
+.banner h2 {
 font : 100%/1.4 proxima-nova, sans-serif;
 text-transform : none;
 margin-bottom : 1.4em; }
 
 /* 9.NAVIGATION */
 
-[role="banner"] nav {
+.banner nav {
 margin : 0;
 clear : left; }
 
-[role="banner"] ul {
+.banner ul {
 list-style : none;
 margin : 0;
 width : 100%;
 padding : 0; }
 
-[role="banner"] li {
+.banner li {
 float : left;
 margin-right : 9.49%; }
 
-[role="banner"] li a, [role="banner"] li a:visited {
+.banner li a, .banner li a:visited {
 color : #BCBCBC; }
 
-[role="banner"] li a:hover {
+.banner li a:hover {
 color : rgb(255,255,255); }
 
 /* 10.CONTENT */
@@ -329,24 +329,24 @@ margin : 0 auto; }
 
 /* 11.MAIN */
 
-[role="main"] {
+.main {
 padding : 1.4em 0; }
 
-[role="main"] section {
+.main section {
 padding : 0 0 1.4em; }
 
-[role="main"] section:last-child {
+.main section:last-child {
 padding : 0; }
 
-[role="main"] h2 {
+.main h2 {
 margin : 0 5% 0.46em; }
 
-.home [role="main"] h2 {
+.home .main h2 {
 margin : 0 5%;
 padding-bottom : 16px;
 border-bottom : 1px solid #BEBEBE; }
 
-[role="main"] a {
+.main a {
 border : 1px solid transparent;
 margin : 0 -1px;
 -moz-transition : all 0.3s ease;
@@ -366,7 +366,7 @@ display : block;
 -o-transition : all 0.3s ease-in-out;
 transition : all 0.3s ease-in-out; }
 
-[role="main"] a:hover {
+.main a:hover {
 background : #E9E9E9;
 text-shadow : 1px 1px 1px rgba(255,255,255,1);
 -moz-box-shadow : inset 0 0 10px rgba(40,40,40,0.1);
@@ -374,7 +374,7 @@ text-shadow : 1px 1px 1px rgba(255,255,255,1);
 box-shadow : inset 0 0 10px rgba(40,40,40,0.1);
 border : 1px solid #D5D5D5; }
 
-[role="main"] a:active{
+.main a:active{
 background : #D4D4D4;
 text-shadow : 1px 1px 1px rgba(255,255,255,1);
 -moz-box-shadow : inset 0 0 10px rgba(40,40,40,0.1);
@@ -386,7 +386,7 @@ border : 1px solid #B2B2B2; }
 text-align : center;
 clear : both; }
 
-[role="main"] h2 a {
+.main h2 a {
 padding-right : 36px;
 background : url("../img/arrow.png") no-repeat scroll right 5px transparent;
 display : inline-block;
@@ -397,7 +397,7 @@ color : rgb(40,40,40);
 transition : color 0.1s ease;
 border : 1px solid transparent; }
 
-[role="main"] h2 a:hover {
+.main h2 a:hover {
 color : #1777AF;
 background : url("../img/arrow.png") no-repeat scroll right -43px transparent;
 border : 1px solid transparent;
@@ -406,7 +406,7 @@ border : 1px solid transparent;
 box-shadow : none;
 text-shadow : none; }
 
-[role="main"] h2 a:active {
+.main h2 a:active {
 text-decoration : underline;
 -moz-box-shadow : none;
 -webkit-box-shadow : none;
@@ -500,7 +500,7 @@ margin : 0 0 0.46em; }
 
 /* 12.COMPLEMENTARY */
 
-[role="complementary"] {
+.complementary {
 padding : 1.4em 0;
 color : rgb(255,255,255);
 background : #282828; 
@@ -510,37 +510,37 @@ border-top : 1px solid #000000;
 -webkit-box-shadow : 0 -3px 10px rgba(40, 40, 40, 0.1);
 box-shadow : 0 -3px 10px rgba(40, 40, 40, 0.1); }
 
-[role="complementary"] h2 {
+.complementary h2 {
 margin : 0 5%; }
 
-[role="complementary"] p {
+.complementary p {
 margin : 0; }
 
-[role="complementary"] a {
+.complementary a {
 -moz-transition : all 0.3s ease;
 -webkit-transition : all 0.3s ease;
 -o-transition : all 0.3s ease;
 transition : all 0.3s ease;
 color : #21ABFB; }
 
-[role="complementary"] a:visited {
+.complementary a:visited {
 color : #21ABFB; }
 
-[role="complementary"] a:hover {
+.complementary a:hover {
 color : rgb(255,255,255); }
 
-[role="complementary"] a:active {
+.complementary a:active {
 color : rgb(255,255,255);
 text-decoration : underline; }
 
-[role="complementary"] ul {
+.complementary ul {
 list-style : none;
 margin-bottom : 0; }
 
-[role="complementary"] section {
+.complementary section {
 padding : 1.4em 0; }
 
-[role="complementary"] nav {
+.complementary nav {
 padding : 1.4em 0; }
 
 /* 13.CONTENTINFO */
@@ -640,10 +640,10 @@ textarea  {
 -o-box-sizing : border-box;
 box-sizing : border-box; }
 
-.ie6 [role="main"], .ie7 [role="main"], .ie8 [role="main"] {
+.ie6 .main, .ie7 .main, .ie8 .main {
 width : 900px; }
 
-.ie6 [role="banner"] nav {
+.ie6 .banner nav {
 margin : 0;
 width : 100%; }
 
@@ -662,20 +662,20 @@ float : left;
 margin-right : 3.33%;
 width : 22.44%; }
 
-.ie6 [role="complementary"] section, .ie6 [role="complementary"] nav {
+.ie6 .complementary section, .ie6 .complementary nav {
 width : 20%; }
 
 .ie6 footer p, .ie7 footer p, .ie8 footer p {
 width : 900px;
 margin : 0 auto; }
 
-.ie6 [role="main"] a {
+.ie6 .main a {
 border : 1px solid #FFFFFF; }
 
-.ie6 [role="main"] h2 a:hover {
+.ie6 .main h2 a:hover {
 border : 1px solid #FFFFFF; }
 
-.ie6 [role="main"] h2 a:active {
+.ie6 .main h2 a:active {
 border : 1px solid #FFFFFF; }
 
 /* Non-semantic helper classes */
@@ -734,32 +734,32 @@ margin-bottom : 1.5em; }
 
 /* 2.HEADINGS */
 
-.home [role="banner"] h1 {
+.home .banner h1 {
 text-shadow : 3px 3px 1px #000000;
 font-size : 6em; }
 
-.home [role="banner"] {
+.home .banner {
 padding : 0; }
 
 /* 8.BANNER */
 
-[role="banner"] {
+.banner {
 padding : 0; }
  
 /* 9.NAVIGATION */
 
-[role="banner"] nav {
+.banner nav {
 margin-left : 25.78%;
 width : 74.22%;
 clear : none; }
 
-[role="banner"] ul {
+.banner ul {
 list-style : none;
 float : left;
 margin : 0;
 padding : 0; }
 
-[role="banner"] li {
+.banner li {
 float : left;
 margin-top : 13px;
 margin-bottom : 10px;
@@ -768,28 +768,28 @@ line-height : 0.8;
 width : 12.87%;
 max-width : 53px; }
 
-[role="banner"] li a {
+.banner li a {
 padding : 20px 0 8px; }
 
 /* 11.MAIN */
 
-[role="main"] {
+.main {
 margin : 0 auto;
 width : 90%;
 max-width : 900px; }
 
-[role="main"] section {
+.main section {
 width : 48.33%;
 float : left;
 padding : 0; }
 
-[role="main"] section:first-child {
+.main section:first-child {
 margin-right : 3.33%; }
 
-[role="main"] h2 {
+.main h2 {
 margin : 0 0 0.46em; }
 
-.home [role="main"] h2 {
+.home .main h2 {
 margin : 0; }
 
 .archive header {
@@ -856,27 +856,27 @@ margin-right : 1px; }
 
 /* 12.COMPLEMENTARY */
 
-[role="complementary"] section {
+.complementary section {
 float : left;
 width : 48.33%;
 padding : 1.4em 0; }
 
-[role="complementary"] section.extras {
+.complementary section.extras {
 clear : left;
 margin-right : 3.33%; }
 
-[role="complementary"] nav { 
+.complementary nav { 
 float : left;
 width : 48.33%;
 margin-right : 3.33%;
 padding : 1.4em 0; }
 
-[role="complementary"] h2 {
+.complementary h2 {
 margin : 0; }
 
 /* 14.GLOBAL OBJECTS */
 
-[role="main"] h2.fourohfour {
+.main h2.fourohfour {
 font-size : 7.85em;
 margin-bottom : .3em; }
 }
@@ -912,25 +912,25 @@ margin-right : 1px; }
 
 /* 12.COMPLEMENTARY */
 
-[role="complementary"] section {
+.complementary section {
 width : 22.44%;
 padding : 1.4em 0;
 margin-right : 3.33%; }
 
-[role="complementary"] section:last-child {
+.complementary section:last-child {
 margin-right : 0; }
 
-[role="complementary"] section.extras {
+.complementary section.extras {
 clear : none; }
 
-[role="complementary"] nav {
+.complementary nav {
 width : 22.44%;
 padding : 1.4em 0;
 margin-right : 3.33%; }
 
 /* 14.GLOBAL OBJECTS */
 
-[role="main"] h2.fourohfour {
+.main h2.fourohfour {
 font-size : 10em; }
 }
 
