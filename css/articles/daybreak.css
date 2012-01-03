@@ -29,13 +29,6 @@ font-size : 4.85em;
 margin-bottom : 0.32em; }
 
 article p {
--webkit-hyphens : auto;
--webkit-hyphenate-character : "\2010";
--webkit-hyphenate-limit-after : 1;
--webkit-hyphenate-limit-before : 3;
--moz-hyphens : auto;
-hyphens : auto;
-text-align : justify;
 font-family : chaparral-pro,serif;
 font-size : 1.125em; /* 18 / 16 */
 margin : 0 0 1.5em;
