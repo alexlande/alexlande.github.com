@@ -18,7 +18,7 @@ License: http://creativecommons.org/licenses/MIT/
 <head>
 <meta charset="utf-8">
 
-<title>Waci&#8217;-ci Trading Co. | Alex Lande</title>
+<title>Conditional Stylesheets Revisited | Alex Lande</title>
 
 <meta name="author" content="Alex Lande">
 
@@ -34,7 +34,7 @@ License: http://creativecommons.org/licenses/MIT/
 <script src="http://alexlande.com/js/libs/selectivizr-min.js"></script>
 <![endif]-->
 
-
+<link rel="stylesheet" href="/css/articles/conditionalstylesheets.css">
 
 <!-- JavaScript at bottom except for Modernizr -->
 <script src="/js/libs/modernizr.js"></script>
@@ -86,66 +86,20 @@ License: http://creativecommons.org/licenses/MIT/
 
 		<div role="main" class="main clearfix">
 	
-		<article class="project hentry">
+		<article class="hentry">
 		
-						<h2 class="entry-title">Waci&#8217;-ci Trading Co.</h2>
+			<h2 class='entry-title'>Conditional Stylesheets Revisited</h2>
+<p>I firmly believe that the proper way to build a responsive design is mobile first. The approach makes sense from a design perspective, in that it allows you to easily focus on what really matters in your project. It makes sense for development too, but there are a few issues. One of the most glaring is the lack of media query support in a few prominent versions of a certain prominent browser.</p>
 
-			<figure><img class="entry-content-asset" src="http://alexlande.com/img/wacici/wacici-1.jpg" alt="front page of wacici.com" /></figure>
-			
-			<aside class="colophon clearfix">
-			
-				<h3>Quick Hits</h3>
-				
-				<ul>
-				
-					<li><em>Role:</em> Design and Development</li>
-					
-					<li><em>Platform:</em> Shopify</li>
-				
-					<li><em>Type:</em> Museo Slab, Museo Sans, and Athelas Web</li>
-					
-					<li><em>Palette:</em>
-						<ul class="palette clearfix">
-							<li style="background-color:#615F56">#615F56</li>
-							<li style="background-color:#D9AD7B">#D9AD7B</li>
-							<li style="background-color:#E5E0C2">#E5E0C2</li>
-							<li style="background-color:#FCFAE1">#FCFAE1</li>
-							<li style="background-color:#FFFFFF">#FFFFFF</li>
-							<li style="background-color:#1777AF">#1777AF</li>
-						</ul>
-					</li>
-					
-				</ul>
-				
-				<p class="view"><a href="http://www.wacici.com">View Project</a></p>
-				
-				<p><time class="updated" datetime="2011-09-19" pubdate>September 19th, 2011</time></p>
-				
-			</aside>
-			
-			<div class="study">
-			
-				<p>After opening a shop in the newly constructed <a href="http://www.succm.org">Southern Ute Cultural Center &amp; Museum</a>, Waci&rsquo;-ci Trading Co. approached me with the goal of bringing authentic Native American art and jewelry to the rest of the world.</p>
+<p>IE has always been a problem, and versions prior to the fairly decent IE9 are a problem for responsive design too. If you were to build a website desktop-first, the fact that IE6-8 don&#8217;t support media queries wouldn&#8217;t be much of a problem. The issue arises when you design mobile-first, as those browsers are stuck by default with the small-screen version of the website. This is not ideal.</p>
 
-				<p>A warm but muted color scheme, along with the distinctive glyphs of <a href="http://www.exljbris.com/museoslab.html">Museo Slab</a>, evokes the landscape of the American Southwest and allow the detail and color of the pieces to shine. Clear calls to action and a robust navigation system make it easy for customers to find exactly what they're looking for, and hosting through <a href="http://www.shopify.com">Shopify</a> makes it easy to run the shop, too.</p>
-
-			</div>
-			
-			<figure>
-			
-				<img src="http://alexlande.com/img/wacici/wacici-2.jpg" alt="product information page" />
-				
-				<figcaption>An image rotator and large, crisp photographs make the craftsmanship of the jewelry obvious.</figcaption>
-				
-			</figure>
-			
-			<figure>
-				
-				<img src="http://alexlande.com/img/wacici/wacici-3.jpg" alt="product listing"/>
-				
-				<figcaption>A listing of featured products, arranged in a grid for quick browsing.</figcaption>
-				
-			</figure>
+<p>So far, I&#8217;ve solved this problem with <a href='https://github.com/scottjehl/Respond'>Respond.js</a>, a lovely, lightweight polyfill that makes media queries work in those <em>other</em> browsers.</p>
+<pre>
+<code>&lt;--[if lt IE 7]&gt; &lt;html class="no-js ie6 oldie" lang="en"&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 7]&gt;    &lt;html class="no-js ie7 oldie" lang="en"&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 8]&gt;    &lt;html class="no-js ie8 oldie" lang="en"&gt; &lt;![endif]--&gt;
+&lt;!--[if gt IE 8]&gt;&lt;!--&gt; &lt;html class="no-js" lang="en"&gt; &lt;!--&lt;![endif]--&gt;</code>
+</pre>
 		
 		</article>
 	

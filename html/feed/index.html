@@ -4,13 +4,32 @@
  <title>Alex Lande</title>
  <link href="http://www.alexlande.com/feed/" rel="self"/>
  <link href="http://www/alexlande.com/"/>
- <updated>2012-01-12T22:37:43-07:00</updated>
+ <updated>2012-01-12T23:59:13-07:00</updated>
  <id>http://www.alexlande.com/</id>
  <author>
    <name>Alex Lande</name>
    <email>alexlande@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Conditional Stylesheets Revisited</title>
+   <link href="http://www.alexlande.com/articles/conditionalstylesheets/"/>
+   <updated>2012-01-12T00:00:00-07:00</updated>
+   <id>http://www.alexlande.com/articles/conditionalstylesheets</id>
+   <content type="html">&lt;h2 class='entry-title'&gt;Conditional Stylesheets Revisited&lt;/h2&gt;
+&lt;p&gt;I firmly believe that the proper way to build a responsive design is mobile first. The approach makes sense from a design perspective, in that it allows you to easily focus on what really matters in your project. It makes sense for development too, but there are a few issues. One of the most glaring is the lack of media query support in a few prominent versions of a certain prominent browser.&lt;/p&gt;
+
+&lt;p&gt;IE has always been a problem, and versions prior to the fairly decent IE9 are a problem for responsive design too. If you were to build a website desktop-first, the fact that IE6-8 don&amp;#8217;t support media queries wouldn&amp;#8217;t be much of a problem. The issue arises when you design mobile-first, as those browsers are stuck by default with the small-screen version of the website. This is not ideal.&lt;/p&gt;
+
+&lt;p&gt;So far, I&amp;#8217;ve solved this problem with &lt;a href='https://github.com/scottjehl/Respond'&gt;Respond.js&lt;/a&gt;, a lovely, lightweight polyfill that makes media queries work in those &lt;em&gt;other&lt;/em&gt; browsers.&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;&amp;lt;--[if lt IE 7]&amp;gt; &amp;lt;html class=&quot;no-js ie6 oldie&quot; lang=&quot;en&quot;&amp;gt; &amp;lt;![endif]--&amp;gt;
+&amp;lt;!--[if IE 7]&amp;gt;    &amp;lt;html class=&quot;no-js ie7 oldie&quot; lang=&quot;en&quot;&amp;gt; &amp;lt;![endif]--&amp;gt;
+&amp;lt;!--[if IE 8]&amp;gt;    &amp;lt;html class=&quot;no-js ie8 oldie&quot; lang=&quot;en&quot;&amp;gt; &amp;lt;![endif]--&amp;gt;
+&amp;lt;!--[if gt IE 8]&amp;gt;&amp;lt;!--&amp;gt; &amp;lt;html class=&quot;no-js&quot; lang=&quot;en&quot;&amp;gt; &amp;lt;!--&amp;lt;![endif]--&amp;gt;&lt;/code&gt;
+&lt;/pre&gt;</content>
+ </entry>
  
  <entry>
    <title>Daybreak</title>
