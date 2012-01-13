@@ -1,0 +1,22 @@
+@import "imports/base.scss";
+
+/* 480px */
+@media only screen and (min-width: 480px) {
+
+@import "imports/480.scss";
+
+}
+
+/* 768px */
+@media only screen and (min-width: 768px) {
+
+@import "imports/768.scss";
+
+}
+
+/* 992px */
+@media only screen and (min-width: 992px) {
+
+@import "imports/992.scss";
+
+}
