@@ -633,44 +633,6 @@ textarea {
   -o-box-sizing: border-box;
   box-sizing: border-box; }
 
-.ie6 .main, .ie7 .main, .ie8 .main {
-  width: 900px; }
-
-.ie6 .banner nav {
-  margin: 0;
-  width: 100%; }
-
-.ie6 .container, .ie7 .container, .ie8 .container {
-  width: 900px; }
-
-.ie6 .study {
-  width: 668px; }
-
-.ie6 aside {
-  width: 668px;
-  float: none; }
-
-.ie6 aside li, .ie6 aside p {
-  float: left;
-  margin-right: 3.33%;
-  width: 22.44%; }
-
-.ie6 .complementary section, .ie6 .complementary nav {
-  width: 20%; }
-
-.ie6 footer p, .ie7 footer p, .ie8 footer p {
-  width: 900px;
-  margin: 0 auto; }
-
-.ie6 .main a {
-  border: 1px solid #FFFFFF; }
-
-.ie6 .main h2 a:hover {
-  border: 1px solid #FFFFFF; }
-
-.ie6 .main h2 a:active {
-  border: 1px solid #FFFFFF; }
-
 /* Non-semantic helper classes */
 /* Image replacement */
 .ir {
@@ -979,3 +941,41 @@ textarea {
     width: 14px;
     margin: 3px 1px;
     float: left; } }
+/* IE Specific Styles */
+.ie6 .main, .ie7 .main, .ie8 .main {
+  width: 900px; }
+
+.ie6 .banner nav {
+  margin: 0;
+  width: 100%; }
+
+.ie6 .container, .ie7 .container, .ie8 .container {
+  width: 900px; }
+
+.ie6 .study {
+  width: 668px; }
+
+.ie6 aside {
+  width: 668px;
+  float: none; }
+
+.ie6 aside li, .ie6 aside p {
+  float: left;
+  margin-right: 3.33%;
+  width: 22.44%; }
+
+.ie6 .complementary section, .ie6 .complementary nav {
+  width: 20%; }
+
+.ie6 footer p, .ie7 footer p, .ie8 footer p {
+  width: 900px;
+  margin: 0 auto; }
+
+.ie6 .main a {
+  border: 1px solid #FFFFFF; }
+
+.ie6 .main h2 a:hover {
+  border: 1px solid #FFFFFF; }
+
+.ie6 .main h2 a:active {
+  border: 1px solid #FFFFFF; }
