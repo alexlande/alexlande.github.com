@@ -29,15 +29,14 @@ License: http://creativecommons.org/licenses/MIT/
 
 <link rel="stylesheet" href="/css/style.css">
 
-<!--[if (lt IE 9) & (!IEMobile)]>
-<link rel="stylesheet" href="/css/legacy.css">
-<script src="http://alexlande.com/js/libs/selectivizr-min.js"></script>
-<![endif]-->
-
 
 
 <!-- JavaScript at bottom except for Modernizr -->
 <script src="/js/libs/modernizr.js"></script>
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script>yepnope('/css/legacy.css','/js/libs/selectivizr-min.js');</script>
+<![endif]-->
 
 <!-- For iPhone 4 -->
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://alexlande.com/img/h/apple-touch-icon.gif">
