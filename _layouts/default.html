@@ -192,6 +192,16 @@ var _gaq=[['_setAccount','UA-10034002-4'],['_trackPageview']]; // Change UA-XXXX
 
 <script type="text/javascript" src="http://use.typekit.com/jrb4zrt.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
+{% if page.comments == true %}
+<script type="text/javascript">
+    var disqus_shortname = 'alexlande';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+{% endif %}
 </body>
 </html>
