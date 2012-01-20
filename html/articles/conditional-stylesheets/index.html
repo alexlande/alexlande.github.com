@@ -85,10 +85,25 @@ License: http://creativecommons.org/licenses/MIT/
 
 		<div role="main" class="main clearfix">
 	
-		<article class="hentry">
+		<article>
+
+			<h2 class="entry-title">Conditional Stylesheets Revisited</h2>
+
+			
+			<p class="pubdate">
+			
+				<time datetime="2012-01-12 00:00:00 -0700" pubdate>January 12, 2012</time>
+
+				
+				// <a href="#disqus_thread">View Comments</a>
+				
+
+			</p>
+			
+
+			<section class="hentry">
 		
-			<h2 class='entry-title'>Conditional Stylesheets Revisited</h2>
-<p>If you&#8217;re writing CSS in 2012, there&#8217;s a good chance that you&#8217;re aware of pre-processing through SASS or LESS. <a href='http://nicolasgallagher.com/'>Nicolas Gallagher</a> recently described a SASS technique for mobile first development that allows you to easily deliver large screen styles to outdated browsers. After experimenting with the technique, I&#8217;ve found some ways to push it even further.</p>
+				<p>If you&#8217;re writing CSS in 2012, there&#8217;s a good chance that you&#8217;ve tried pre-processing through SASS or LESS. <a href='http://nicolasgallagher.com/'>Nicolas Gallagher</a> recently described a SASS technique for mobile first development that allows you to easily deliver large screen styles to outdated browsers. After experimenting with the technique, I&#8217;ve found some ways to push it even further.</p>
 
 <h3 id='preprocessing_to_the_rescue'>Pre-processing to the Rescue</h3>
 
@@ -121,24 +136,27 @@ License: http://creativecommons.org/licenses/MIT/
 
 <p>If your design is fully responsive and is built on a fluid grid, IE users will still enjoy an experience that meets them halfway.</p>
 
-<p>My only concern is that the technique is IE specific. In the last week, multiple people have visited this site using Firefox 3. That&#8217;s pretty strange, but it&#8217;s worth noting. There are still people using legacy browsers other than IE. As always, take a look at your statistics before you do anything rash.</p>
+<p>My only concern is that the technique is IE specific. In the last week, multiple people have visited this site using Firefox 3. That&#8217;s pretty strange, but it&#8217;s worth noting that there are still people using legacy browsers other than IE. As always, take a look at your statistics before you do anything rash.</p>
+			
+			</section>
 		
-		</article>
-	
-	
-	<script>var disqus_developer = 1;</script>
-	<h3>Comments</h3>
-		<div id="disqus_thread"></div>
-		<script type="text/javascript">
-		    var disqus_shortname = 'alexlande';
+			
+				<section id="comments">
+					<script>var disqus_developer = 1;</script>
+					<div id="disqus_thread"></div>
+					<script type="text/javascript">
+					    var disqus_shortname = 'alexlande';
 
-		    (function() {
-		        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-		        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-		        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-		    })();
-		</script>
-	
+					    (function() {
+					        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+					        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+					        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+					    })();
+					</script>
+				</section>
+			
+
+		</article>
 	</div>
 	
 	<div role="complementary" class="complementary clearfix">
@@ -242,6 +260,16 @@ var _gaq=[['_setAccount','UA-10034002-4'],['_trackPageview']]; // Change UA-XXXX
 
 <script type="text/javascript" src="http://use.typekit.com/jrb4zrt.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<script type="text/javascript">
+    var disqus_shortname = 'alexlande';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
 
 </body>
 </html>

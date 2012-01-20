@@ -5,10 +5,9 @@ title: Conditional Stylesheets Revisited
 style: /css/articles/technical.css
 comments: true
 published: true
+timestamp: true
 ---
-<h2 class="entry-title">{{ page.title }}</h2>
-
-If you're writing CSS in 2012, there's a good chance that you're aware of pre-processing through SASS or LESS. [Nicolas Gallagher](http://nicolasgallagher.com/) recently described a SASS technique for mobile first development that allows you to easily deliver large screen styles to outdated browsers. After experimenting with the technique, I've found some ways to push it even further.
+If you're writing CSS in 2012, there's a good chance that you've tried pre-processing through SASS or LESS. [Nicolas Gallagher](http://nicolasgallagher.com/) recently described a SASS technique for mobile first development that allows you to easily deliver large screen styles to outdated browsers. After experimenting with the technique, I've found some ways to push it even further.
 
 ### Pre-processing to the Rescue
 
@@ -41,4 +40,4 @@ Although I've been talking about SASS here, this style of modular CSS isn't depe
 
 If your design is fully responsive and is built on a fluid grid, IE users will still enjoy an experience that meets them halfway.
 
-My only concern is that the technique is IE specific. In the last week, multiple people have visited this site using Firefox 3. That's pretty strange, but it's worth noting. There are still people using legacy browsers other than IE. As always, take a look at your statistics before you do anything rash.
+My only concern is that the technique is IE specific. In the last week, multiple people have visited this site using Firefox 3. That's pretty strange, but it's worth noting that there are still people using legacy browsers other than IE. As always, take a look at your statistics before you do anything rash.
