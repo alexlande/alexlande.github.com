@@ -247,7 +247,7 @@ caption {
 
 /* 7.FORMS (See css/mylibs/forms.css) */
 /* 8.BANNER */
-.banner {
+.l-banner {
   color: white;
   background: #282828;
   border-bottom: 1px solid #000000;
@@ -258,67 +258,64 @@ caption {
   text-shadow: 1px 1px 1px #000000;
   border-top: 2px solid #21ABFB; }
 
-.home .banner {
-  padding: 4px 0 0; }
-
-.banner a, .banner a:visited {
+.l-banner a, .l-banner a:visited {
   color: #21ABFB;
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
 
-.banner a:hover {
+.l-banner a:hover {
   color: white; }
 
-.banner a:active {
+.l-banner a:active {
   color: white;
   text-decoration: underline; }
 
-.banner h1 {
+.l-banner h1 {
   line-height: 1.2;
   float: left;
   margin-top: 4px; }
 
-.home .banner h1 {
+.home .l-banner h1 {
   float: none;
   font-size: 3em;
   margin-top: 0; }
 
-.banner h1 a, .banner h1 a:visited {
+.l-banner h1 a, .l-banner h1 a:visited {
   color: white;
   display: inline-block; }
 
-.banner h1 a:hover {
+.l-banner h1 a:hover {
   text-shadow: 2px 2px 1px #1777AF; }
 
-.banner h1 a:active {
+.l-banner h1 a:active {
   text-decoration: none; }
 
-.banner h2 {
+.l-banner h2 {
   font: 100%/1.4 proxima-nova, sans-serif;
   text-transform: none;
   margin-bottom: 1.4em; }
 
 /* 9.NAVIGATION */
-.banner nav {
+.l-banner nav {
   margin: 0;
   clear: left; }
 
-.banner ul {
+.l-banner ul {
   list-style: none;
   margin: 0;
   width: 100%;
   padding: 0; }
 
-.banner li {
+.l-banner li {
   float: left;
   margin-right: 9.49%; }
 
-.banner li a, .banner li a:visited {
+.l-banner li a, .l-banner li a:visited {
   color: #BCBCBC; }
 
-.banner li a:hover {
+.l-banner li a:hover {
   color: white; }
 
 /* 10.CONTENT */
@@ -327,12 +324,6 @@ caption {
   margin: 0 auto; }
 
 /* 11.MAIN */
-.main {
-  padding: 1.4em 0;
-  margin: 0 auto;
-  max-width: 900px;
-  width: 90%; }
-
 .category {
   padding: 0 0 1.4em; }
 
@@ -574,7 +565,7 @@ footer a:active {
 .clearfix:after {
   clear: both; }
 
-.container {
+.l-constrained {
   width: 90%;
   max-width: 900px;
   margin: 0 auto; }
@@ -723,30 +714,30 @@ textarea {
 /* 480px */
 @media only screen and (min-width: 480px) {
   /* 2.HEADINGS */
-  .home .banner h1 {
+  .home .l-banner h1 {
     text-shadow: 3px 3px 1px #000000;
     font-size: 6em; }
 
-  .home .banner {
+  .home .l-banner {
     padding: 0; }
 
   /* 8.BANNER */
-  .banner {
+  .l-banner {
     padding: 0; }
 
   /* 9.NAVIGATION */
-  .banner nav {
+  .l-banner nav {
     margin-left: 25.78%;
     width: 74.22%;
     clear: none; }
 
-  .banner ul {
+  .l-banner ul {
     list-style: none;
     float: left;
     margin: 0;
     padding: 0; }
 
-  .banner li {
+  .l-banner li {
     float: left;
     margin-top: 13px;
     margin-bottom: 10px;
@@ -755,15 +746,10 @@ textarea {
     width: 12.87%;
     max-width: 53px; }
 
-  .banner li a {
+  .l-banner li a {
     padding: 20px 0 8px; }
 
   /* 11.MAIN */
-  .main {
-    margin: 0 auto;
-    width: 90%;
-    max-width: 900px; }
-
   .category {
     width: 48.33%;
     float: left;
