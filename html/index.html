@@ -24,15 +24,17 @@
 
 </head>
 
-<body class="clearfix">
+<body>
 
-<header role="banner" class="l-banner clearfix">
+<header class="l-banner"  role="banner">
 
 	<div class="l-constrained">
 	
-		<h1><a href="/">Alex Lande</a></h1>
+		<a class="logo" href="/">Alex Lande</a>
+
+		<a class="nav-ctrl is-collapsed ir" href="#nav">Navigation</a>
 	
-		<nav>
+		<nav class="nav vh">
 	
 			<ul>
 		
@@ -50,21 +52,21 @@
 	
 </header>
 
-<div role="main cf" class="l-main">
+<div class="l-main" role="main">
 
 	<div class="l-constrained">
 
-				<section class="category">
+				<section>
 
-			<h2><a href="/articles">Articles</a></h2>
+			<h2 class="sct-head"><a href="/articles">Articles</a></h2>
 			
-				<article>
+				<article class="post">
 				
 					<a href="/articles/conditional-stylesheets/">
 					
 						<time datetime="2012-01-20 00:00:00 -0700" pubdate>January 20, 2012</time>
 				
-						<h3>Conditional Stylesheets Revisited</h3>					
+						<h3 class="post-title">Conditional Stylesheets Revisited</h3>					
 				
 						
 						
@@ -72,13 +74,13 @@
 				
 				</article>
 			
-				<article>
+				<article class="post">
 				
 					<a href="/articles/daybreak/">
 					
 						<time datetime="2011-11-04 00:00:00 -0600" pubdate>November 04, 2011</time>
 				
-						<h3>Daybreak</h3>					
+						<h3 class="post-title">Daybreak</h3>					
 				
 						
 						
@@ -90,19 +92,19 @@
 			
 		</section>
 		
-		<section class="category">
+		<section>
 
-			<h2><a href="/projects">Projects</a></h2>
+			<h2 class="sct-head"><a href="/projects">Projects</a></h2>
 			
-				<article>
+				<article class="post">
 				
 					<a href="/projects/waci-ci-trading-co/">
 					
 						<time datetime="2011-09-19 00:00:00 -0600" pubdate>September 19, 2011</time>
 				
-						<h3>Waci&#8217;-ci Trading Co.</h3>					
+						<h3 class="post-title">Waci&#8217;-ci Trading Co.</h3>					
 				
-						<img src="http://alexlande.com/img/wacici/wacici-1.jpg" alt="" />
+						<img class="post-img" src="http://alexlande.com/img/wacici/wacici-1.jpg" alt="" />
 						
 					</a>
 				
@@ -115,13 +117,13 @@
 
 </div>
 
-<footer role="contentinfo">
+<footer class="l-footer" role="contentinfo">
 
 	<div class="l-constrained">
 		
-		<nav>
+		<nav id="footer-nav" class="block">
 		
-			<h3>Here</h3>
+			<h2>Here</h2>
 			
 			<ul>
 			
@@ -129,15 +131,15 @@
 				
 				<li>Read some <a href="/articles">Articles</a></li>
 				
-				<li>See some <a href="/projects">Projects</a></li>
+				<li>View my <a href="/projects">Projects</a></li>
 				
 			</ul>
 			
 		</nav>
 		
-		<section>
+		<section class="block">
 		
-			<h3>There</h3>
+			<h2>There</h2>
 			
 			<ul>
 			
@@ -151,31 +153,23 @@
 			
 		</section>
 		
-		<section>
+		<section class="block">
 		
-			<h3>Extras</h3>
+			<h2>Also</h2>
+
+			<ul>
 		
-			<p>There is an <a href="http://feeds.feedburner.com/alexlande">RSS Feed</a></p>
-		
-			<p>I have an <a href="mailto:alexlande@gmail.com">Email Address</a></p>
-		
-			<p>View source on <a href="http://github.com/lawnday/alexlande.com">GitHub</a></p>
+				<li>There is an <a href="http://feeds.feedburner.com/alexlande">RSS Feed</a></li>
+
+				<li>View source on <a href="http://github.com/lawnday/alexlande.com">GitHub</a></li>
 			
-		</section>
-		
-		<section>
-		
-			<h3>Facts</h3>
-			
-			<p>Hosted by <a href="http://mediatemple.net/">Media Temple</a></p>
-			
-			<p>Fonts served by <a href="http://www.typekit.com/">Typekit</a></p>
-			
-			<p>Thanks a lot for visiting.</p>
+				<li>Feel free to <a href="mailto:alexlande@gmail.com">Email Me</a></li>
+
+			</ul>
 			
 		</section>
 
-		<small>Copyright &copy; 2011&ndash;2012 <a href="/">Alex Lande</a></small>
+		<small class="copyright">Copyright &copy; 2011&ndash;2012 <a href="/">Alex Lande</a></small>
 
 	</div>
 

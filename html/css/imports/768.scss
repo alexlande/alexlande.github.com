@@ -1,48 +1,30 @@
-/* 11.MAIN */
+/* 
+================================================= 
+Base
+=================================================
+*/
 
-.archive header {
-padding-right : 25.78%; }
 
-aside li, aside p {
-width : 22.44%;
-margin-right : 3.33%; }
 
-aside .view {
-clear : both;
-width : 70.65% }
+/* 
+================================================= 
+Layout
+=================================================
+*/
 
-aside li:nth-child(even) {
-margin-right : 0; }
 
-aside p:nth-child(even) {
-margin-right : 0; }
 
-.palette li {
-width : 14px;
-margin : 3px 1px; }
+/* 
+================================================= 
+Modules
+=================================================
+*/
 
-.palette li:nth-child(even) {
-margin-right : 1px; }
 
-/* 12.COMPLEMENTARY */
 
-.complementary section {
-width : 22.44%;
-padding : 1.4em 0;
-margin-right : 3.33%; }
+/* 
+================================================= 
+States
+=================================================
+*/
 
-.complementary section:last-child {
-margin-right : 0; }
-
-.complementary section.extras {
-clear : none; }
-
-.complementary nav {
-width : 22.44%;
-padding : 1.4em 0;
-margin-right : 3.33%; }
-
-/* 14.GLOBAL OBJECTS */
-
-.main h2.fourohfour {
-font-size : 10em; }
