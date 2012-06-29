@@ -1,0 +1,208 @@
+/* 
+================================================= 
+Modules
+=================================================
+*/
+
+.banner {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 0 10px rgba(40,40,40,0.1);
+
+  background: $contrast;
+
+  color: $contrast-text;
+  text-shadow: $contrast-shadow;
+}
+
+.logo, .logo:visited {
+  padding-top: .167em;
+  display: block;
+  height: 48px;
+
+  font-family: $heading;
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $contrast-text;
+  -webkit-font-smoothing: antialiased;
+}
+
+.nav {
+
+  text-align: center;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    padding: 1em;
+
+    color: #BCBCBC;
+  }
+
+  a:hover {
+    color: $contrast-text;
+  }
+
+}
+
+.main {
+  margin: 1.4em 0;
+}
+
+.sct-head {
+  padding: 0 0 0.33em;
+  margin: 0.33em 0 0;
+
+  border-bottom: 1px solid #BEBEBE;
+
+  font-size: 3em;
+  line-height: 0.9;
+}
+
+.sct-head a {
+  padding-right: 36px;
+  display: inline-block;
+
+  background: url("../img/arrow.png") no-repeat scroll right 5px transparent;
+  color: $contrast;
+}
+
+.sct-head a:hover {
+  background-position: right -43px;
+
+  color: $link;
+}
+
+.post {
+  border-bottom: $border;
+}
+
+.post a {
+  display: block;
+  padding: 1em 0;
+}
+
+.post a:hover .post-title {
+  color: $link;
+}
+
+.post-title {
+  margin: 0;
+
+  font-size: 1.5em;
+  line-height: 0.9;
+
+  color: $contrast;
+}
+
+.post-img {
+  margin-top: 1em;
+}
+
+.pubdate {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: #7E7E7E;
+  line-height: 1.65em;
+}
+
+.colophon {
+
+  border-bottom: 1px solid #BEBEBE;
+
+  ul {
+    padding: 0;
+  }
+
+}
+
+.colophon-item {
+  margin-bottom: 1.4em;
+
+  list-style: none;
+}
+
+.colophon-head {
+  display: block;
+
+  text-transform: uppercase;
+  font-style: normal;
+  font-size: 0.8em;
+  line-height: 1.65em;
+  color: #7E7E7E;
+}
+
+.palette {
+  margin: 0;
+}
+
+.palette li {
+  width: 14px;
+  height: 14px;
+  margin: 3px 1px;
+  float: left;
+
+  border: 1px solid #BEBEBE;
+
+  list-style: none;
+  text-indent: -9999px; 
+}
+
+.cta {
+  display: block;
+  padding: 1em;
+
+  border: 1px solid #BEBEBE;
+  border-left: none;
+  border-right: none;
+
+  font-family: $heading;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.caption {
+  color: #666;
+  font-size: 0.875em;
+}
+
+.block ul {
+  padding: 0;
+}
+
+.block li {
+  list-style: none;
+}
+
+.footer {
+  border-top: 1px solid #000;;
+
+  background: $contrast;
+
+  color: $contrast-text;
+  text-shadow: $contrast-shadow;
+}
+
+.footer a {
+  color: $contrast-link;
+}
+
+.footer a:hover {
+  color: $contrast-text;
+}
+
+.copyright {
+  display: block;
+  padding: 1em 0;
+
+  font-size: 1em;
+}
