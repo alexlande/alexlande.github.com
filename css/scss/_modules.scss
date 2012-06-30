@@ -27,9 +27,13 @@ Modules
   -webkit-font-smoothing: antialiased;
 }
 
-.nav {
+.logo:hover {
+  color: $contrast-text;
+}
 
+.nav {
   text-align: center;
+  margin: 0 1.19%;
 
   ul {
     padding: 0;
@@ -105,6 +109,8 @@ Modules
 
 .post-img {
   margin-top: 1em;
+
+  box-shadow: 1px 2px 2px rgba(0,0,0,0.3);
 }
 
 .pubdate {
@@ -159,6 +165,7 @@ Modules
 .cta {
   display: block;
   padding: 1em;
+  clear: both;
 
   border: 1px solid #BEBEBE;
   border-left: none;
@@ -168,6 +175,12 @@ Modules
   font-size: 2em;
   text-transform: uppercase;
   text-align: center;
+}
+
+.fig-img {
+  margin: 1.4em 0;
+  display: block;
+  box-shadow: 1px 2px 2px rgba(0,0,0,0.3);
 }
 
 .caption {
@@ -181,6 +194,12 @@ Modules
 
 .block li {
   list-style: none;
+}
+
+.meta li {
+  display: inline-block;
+  margin-right: 1em;
+  font-size: 0.875em;
 }
 
 .footer {
@@ -202,7 +221,10 @@ Modules
 
 .copyright {
   display: block;
-  padding: 1em 0;
 
-  font-size: 1em;
+  font-size: 0.875em;
+}
+
+.copyright a {
+  margin-left: 1em;
 }

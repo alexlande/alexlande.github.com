@@ -2,7 +2,7 @@
 layout: default
 description: The personal website of Alex Lande, web designer and aggravator in Boulder, CO.
 ---
-		<section>
+		<section class="l-articles">
 
 			<h2 class="sct-head"><a href="/articles">Articles</a></h2>
 			{% for post in site.categories.articles | limit: 3 %}
@@ -14,7 +14,7 @@ description: The personal website of Alex Lande, web designer and aggravator in 
 			
 		</section>
 		
-		<section>
+		<section class="l-projects">
 
 			<h2 class="sct-head"><a href="/projects">Projects</a></h2>
 			{% for post in site.categories.projects | limit: 3 %}

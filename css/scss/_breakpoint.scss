@@ -4,6 +4,89 @@ Breakpoint 1
 =================================================
 */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 25em) {
+
+.l-block {
+	@include s-col(1);
+	display: inline-block;
+}
+
+.l-block.last {
+	margin-right: 0;
+}
+
+.copyright {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.meta {
+	display: inline-block;
+}
+
+}
+
+@media only screen and (min-width: 34em) {
+
+.logo {
+	display: inline-block;
+	height: 70px;
+}
+
+.nav {
+	display: inline-block;
+	vertical-align: top;
+	margin: 14px 0 0;
+}
+
+}
+
+@media only screen and (min-width: 45em) {
+
+.l-primary {
+	@include m-col(4);
+}
+
+.l-about {
+	@include m-col(2);
+}
+
+.l-block {
+	@include m-col(2);
+}
+
+.l-figure {
+	@include m-col(4);
+}
+
+.l-articles {
+	@include m-col(2);
+}
+
+.l-projects {
+	@include m-col(4);
+	margin-right: 0;
+}
+
+.colophon {
+	border: none;
+
+	ul {
+		height: 1em;
+	}
+
+}
+
+}
+
+@media only screen and (min-width: 56em) {
+
+.l-figure {
+	@include l-col(9);
+}
+
+.fig {
+	clear: both;
+}
+
 }

@@ -3,7 +3,7 @@
 function ExpandTarget(controller) {
 	this.controller = controller;
 	
-	this.target = $('.'+ this.controller.attr('data-target'));
+	this.target = $('.' + this.controller.attr('data-target'));
 
 	this.expand = function() {
 		this.target.toggleClass('is-expanded');
