@@ -127,12 +127,12 @@ Larger Than 896px
 IE
 =================================================
 */
-.ltie8 .nav li {
+.nav li {
   zoom: 1;
   *display: inline;
 }
 
-.leie8 .meta li {
+.meta li {
   zoom: 1;
   *display: inline;
 }
