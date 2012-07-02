@@ -1,11 +1,9 @@
 ---
 layout: default
 ---
-	<div role="main" class="main clearfix">
-	
 		<article>
 
-			<h2 class="entry-title">{{ page.title }}</h2>
+			<h1 class="sct-head">{{ page.title }}</h1>
 
 			{% if page.timestamp == true %}
 			<p class="pubdate">
@@ -19,7 +17,7 @@ layout: default
 			</p>
 			{% endif %}
 
-			<section class="hentry">
+			<section class="hentry l-primary">
 		
 				{{ content }}
 			
@@ -42,4 +40,3 @@ layout: default
 			{% endif %}
 
 		</article>
-	</div>
