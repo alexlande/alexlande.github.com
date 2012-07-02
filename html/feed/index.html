@@ -4,7 +4,7 @@
  <title>Alex Lande</title>
  <link href="http://www.alexlande.com/feed/" rel="self"/>
  <link href="http://www/alexlande.com/"/>
- <updated>2012-07-02T11:30:06-06:00</updated>
+ <updated>2012-07-02T11:47:20-06:00</updated>
  <id>http://www.alexlande.com/</id>
  <author>
    <name>Alex Lande</name>
@@ -39,7 +39,7 @@
 &lt;p&gt;The same thing is possible with the SASS importing method. It&amp;#8217;s easiest if you&amp;#8217;re using &lt;a href='https://github.com/Modernizr/Modernizr'&gt;Modernizr&lt;/a&gt;, which has both html5shiv and a conditional loader called yepnope built in. Using yepnope, we can ensure that the legacy style sheet only loads when html5shiv is in use:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;&amp;lt;!--[if (lt IE 9) &amp;amp; (!IEMobile)]&amp;gt;
-&amp;lt;script&amp;gt;yepnope(&amp;#39;legacy.css&amp;#39;);&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;gt;yepnope(&amp;#39;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;legacy.css&amp;quot;&amp;gt;&amp;#39;);&amp;lt;/script&amp;gt;
 &amp;lt;![endif]--&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;You can toss a script like &lt;a href='https://github.com/keithclark/selectivizr'&gt;Selectivizr&lt;/a&gt; in at the same time, if you&amp;#8217;re so inclined.&lt;/p&gt;
