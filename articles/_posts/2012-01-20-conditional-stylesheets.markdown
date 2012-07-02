@@ -2,14 +2,12 @@
 layout: article
 category: articles
 title: Conditional Stylesheets Revisited
-style: /css/articles/technical.css
-comments: true
 published: true
 timestamp: true
 ---
 If you're writing CSS in 2012, there's a good chance that you've tried pre-processing through SASS or LESS. [Nicolas Gallagher](http://nicolasgallagher.com/) recently described a SASS technique for mobile first development that allows you to easily deliver large screen styles to outdated browsers. After experimenting with the technique, I've found some ways to push it even further.
 
-### Pre-processing to the Rescue
+## Pre-processing to the Rescue
 
 [Nicolas' technique](http://nicolasgallagher.com/mobile-first-css-sass-and-ie/) uses SASS imports to create a media query-laden style sheet for capable browsers and an IE-specific style sheet that delivers the same styles in a conditional comment.
 
@@ -22,19 +20,19 @@ It feels sort of odd to use an IE style sheet in a world of [conditional classes
 
 Easy as that, your main styles are free of <code>.ie7</code> and <code>.oldie</code>. Feels good, right?
 
-### html5shiv Optimizations
+## html5shiv Optimizations
 
 One of the little-discussed benefits of media query polyfills like [Respond.js](https://github.com/scottjehl/Respond) is that they make excellent companions to html5shiv. If you're using both, and a user visits your site on a legacy browser without JavaScript, they'll only receive your base styles. If you've planned for this, that means they'll see a functional but basic page, one that isn't crippled by the lack of styled HTML5 elements and media queried layout.
 
 The same thing is possible with the SASS importing method. It's easiest if you're using [Modernizr](https://github.com/Modernizr/Modernizr), which has both html5shiv and a conditional loader called yepnope built in. Using yepnope, we can ensure that the legacy style sheet only loads when html5shiv is in use:
 
 	<!--[if (lt IE 9) & (!IEMobile)]>
-	<script>yepnope('legacy.css');</script>
+	<script>yepnope('<link rel="stylesheet" href="legacy.css">');</script>
 	<![endif]-->
 
 You can toss a script like [Selectivizr](https://github.com/keithclark/selectivizr) in at the same time, if you're so inclined.
 
-### Be Not Afraid
+## Be Not Afraid
 
 Although I've been talking about SASS here, this style of modular CSS isn't dependent on it. It [works with LESS](https://gist.github.com/1407227), with a build script a la HTML5 Boilerplate, and if you're really masochistic you could do it by hand with copy and paste. (Don't do that.)
 

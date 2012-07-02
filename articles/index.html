@@ -1,33 +1,11 @@
 ---
 layout: archive
 title: Articles
-description: A collection of writing on topics usually related to design and/or the web.
+description: This is a collection of my writing on topics that are usually related to design and/or the web.
 ---		
-		
-		<header>
-
-			<h2><a href="/articles">Articles</a></h2>
-			
-			<p>This is a collection of my writing on topics that are usually related to design and/or the web.</p>
-			
-			<p><a class="contact" href="mailto:alexlande@gmail.com?subject=Some thoughts">Have any thoughts?</a></p>
-			
-		</header>
 		
 		{% for post in site.categories.articles | limit: 6 %}
 		
-			<article>
-			
-				<a href="{{ post.url }}">
-				
-					<time datetime="{{ post.date }}" pubdate>{{ post.date | date:"%B %d, %Y" }}</time>
-			
-					<h3>{{ post.title }}</h3>					
-			
-					{% if post.image %}<img src="{{ post.image }}" alt="" />{% endif %}
-					
-				</a>
-			
-			</article>
+			{% include post-title.html %}
 			
 		{% endfor %}
