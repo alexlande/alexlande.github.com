@@ -14,12 +14,12 @@
 # Concatenate and minify the CSS
 # Requires: Sass (Ruby)
 
-END_CSS="css/main.css"
-END_MIN_CSS="css/main.min.css"
+END_CSS="css"
+END_MIN_CSS="css"
 SASS_COMMAND="sass --load-path css/scss --style"
 
-$SASS_COMMAND expanded css/scss/main.scss:$END_CSS
-$SASS_COMMAND compressed css/scss/main.scss:$END_MIN_CSS
+$SASS_COMMAND expanded css/scss:$END_CSS
+$SASS_COMMAND compressed css/scss:$END_MIN_CSS
 
 echo "SCSS-to-CSS build compilation successful"
 

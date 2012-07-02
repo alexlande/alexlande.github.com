@@ -16,10 +16,14 @@
 
 END_CSS="css/main.css"
 END_MIN_CSS="css/main.min.css"
+END_LEGACY="css/legacy.css"
+END_MIN_LEGACY="css/legacy.min.css"
 SASS_COMMAND="sass --load-path css/scss --style"
 
 $SASS_COMMAND expanded css/scss/main.scss:$END_CSS
 $SASS_COMMAND compressed css/scss/main.scss:$END_MIN_CSS
+$SASS_COMMAND expanded css/scss/legacy.scss:$END_LEGACY
+$SASS_COMMAND compressed css/scss/legacy.scss:$END_MIN_LEGACY
 
 echo "SCSS-to-CSS build compilation successful"
 

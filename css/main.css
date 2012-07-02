@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* 
 ================================================= 
 Mixins
@@ -10,24 +9,6 @@ Mixins
 /* 400px Grid */
 /* 720px Grid */
 /* 900px Grid */
-/* Semantic.gs */
-/* Defaults which you can freely override */
-/* Utility function — you should never need to modify this */
-/* Set $total-width to 100% for a fluid layout */
-/* The micro clearfix */
-/* Grid */
-body {
-  width: 100%;
-  *zoom: 1;
-}
-body:before, body:after {
-  content: "";
-  display: table;
-}
-body:after {
-  clear: both;
-}
-
 /* 
 ================================================= 
 Normalize
@@ -774,13 +755,9 @@ Modules
 States
 =================================================
 */
-.is-expanded {
-  display: block;
-}
-
 /* 
 ================================================= 
-Breakpoint 1
+Larger Than 400px
 =================================================
 */
 @media only screen and (min-width: 25em) {
@@ -805,6 +782,11 @@ Breakpoint 1
     display: inline-block;
   }
 }
+/* 
+================================================= 
+Larger Than 544px
+=================================================
+*/
 @media only screen and (min-width: 34em) {
   .logo {
     display: inline-block;
@@ -817,6 +799,11 @@ Breakpoint 1
     margin: 14px 0 0;
   }
 }
+/* 
+================================================= 
+Larger Than 720px
+=================================================
+*/
 @media only screen and (min-width: 45em) {
   .l-primary {
     float: left;
@@ -868,6 +855,11 @@ Breakpoint 1
     height: 1em;
   }
 }
+/* 
+================================================= 
+Larger Than 896px
+=================================================
+*/
 @media only screen and (min-width: 56em) {
   .l-figure {
     float: left;
@@ -880,16 +872,6 @@ Breakpoint 1
     clear: both;
   }
 }
-/* 
-================================================= 
-Modernizr
-=================================================
-*/
-/* 
-================================================= 
-IE
-=================================================
-*/
 /* 
 ================================================= 
 Nonsemantic Helper Classes

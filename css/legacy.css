@@ -1,0 +1,129 @@
+/* 
+================================================= 
+Mixins
+=================================================
+*/
+/* Colors */
+/* Shadows */
+/* Fonts */
+/* 400px Grid */
+/* 720px Grid */
+/* 900px Grid */
+/* 
+================================================= 
+Larger Than 400px
+=================================================
+*/
+.l-block {
+  float: left;
+  width: 46.12%;
+  margin-right: 6.29%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.l-block.last {
+  margin-right: 0;
+}
+
+.copyright {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.meta {
+  display: inline-block;
+}
+
+/* 
+================================================= 
+Larger Than 544px
+=================================================
+*/
+.logo {
+  display: inline-block;
+  height: 70px;
+}
+
+.nav {
+  display: inline-block;
+  vertical-align: top;
+  margin: 14px 0 0;
+}
+
+/* 
+================================================= 
+Larger Than 720px
+=================================================
+*/
+.l-primary {
+  float: left;
+  width: 65.55%;
+  margin-right: 3.33%;
+  vertical-align: top;
+}
+
+.l-about {
+  float: left;
+  width: 31.11%;
+  margin-right: 3.33%;
+  vertical-align: top;
+}
+
+.l-block {
+  float: left;
+  width: 31.11%;
+  margin-right: 3.33%;
+  vertical-align: top;
+}
+
+.l-figure {
+  float: left;
+  width: 65.55%;
+  margin-right: 3.33%;
+  vertical-align: top;
+}
+
+.l-articles {
+  float: left;
+  width: 31.11%;
+  margin-right: 3.33%;
+  vertical-align: top;
+}
+
+.l-projects {
+  float: left;
+  width: 65.55%;
+  margin-right: 3.33%;
+  vertical-align: top;
+  margin-right: 0;
+}
+
+.colophon {
+  border: none;
+}
+.colophon ul {
+  height: 1em;
+}
+
+/* 
+================================================= 
+Larger Than 896px
+=================================================
+*/
+.l-figure {
+  float: left;
+  width: 74.37%;
+  margin-right: 2.67%;
+  vertical-align: top;
+}
+
+.fig {
+  clear: both;
+}
+
+/* 
+================================================= 
+IE
+=================================================
+*/
