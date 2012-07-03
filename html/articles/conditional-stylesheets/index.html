@@ -93,7 +93,7 @@
 <p>The same thing is possible with the SASS importing method. It&#8217;s easiest if you&#8217;re using <a href='https://github.com/Modernizr/Modernizr'>Modernizr</a>, which has both html5shiv and a conditional loader called yepnope built in. Using yepnope, we can ensure that the legacy style sheet only loads when html5shiv is in use:</p>
 
 <pre><code>&lt;!--[if (lt IE 9) &amp; (!IEMobile)]&gt;
-&lt;script&gt;yepnope(&#39;&lt;link rel=&quot;stylesheet&quot; href=&quot;legacy.css&quot;&gt;&#39;);&lt;/script&gt;
+	&lt;script&gt;yepnope(&#39;/css/legacy.css&#39;)&lt;/script&gt;
 &lt;![endif]--&gt;</code></pre>
 
 <p>You can toss a script like <a href='https://github.com/keithclark/selectivizr'>Selectivizr</a> in at the same time, if you&#8217;re so inclined.</p>
