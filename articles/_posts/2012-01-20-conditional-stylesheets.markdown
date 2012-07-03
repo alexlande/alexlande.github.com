@@ -27,7 +27,7 @@ One of the little-discussed benefits of media query polyfills like [Respond.js](
 The same thing is possible with the SASS importing method. It's easiest if you're using [Modernizr](https://github.com/Modernizr/Modernizr), which has both html5shiv and a conditional loader called yepnope built in. Using yepnope, we can ensure that the legacy style sheet only loads when html5shiv is in use:
 
 	<!--[if (lt IE 9) & (!IEMobile)]>
-	<script>yepnope('<link rel="stylesheet" href="legacy.css">');</script>
+		<script>yepnope('/css/legacy.css')</script>
 	<![endif]-->
 
 You can toss a script like [Selectivizr](https://github.com/keithclark/selectivizr) in at the same time, if you're so inclined.
