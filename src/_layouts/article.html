@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<article class="ArticleLinks">
+  <header class="u-defaultMargin">
+    <h1 class="Title HeadingA u-textKern">{{ page.title }}</h1>
+
+    <time class="Meta" datetime="{{ post.date }}" pubdate>
+      {{ page.date | date:"%B %d, %Y" }}
+    </time>
+  </header>
+
+  <p class="Kicker">
+    {{ page.excerpt | remove: "<p>" | remove: "</p>" }}
+  </p>
+
+  <div class="Article Container Container--narrow Container--full u-marginModule">
+    {{ content | remove: page.excerpt }}
+  </div>
+</article>

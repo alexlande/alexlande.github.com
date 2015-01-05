@@ -26,8 +26,19 @@
     "gulp-rename": "^1.2.0",
     "gulp-rework": "^1.0.2",
     "gulp-util": "^3.0.1",
+    "install": "^0.1.8",
+    "normalize.css": "^3.0.2",
+    "npm": "^2.1.11",
     "open": "0.0.5",
     "rework-suit": "^4.0.0",
-    "serve-static": "^1.7.1"
+    "serve-static": "^1.7.1",
+    "suitcss-base": "^0.8.0",
+    "suitcss-components-arrange": "^0.6.2",
+    "suitcss-components-grid": "^2.0.2",
+    "suitcss-utils-display": "^0.4.2",
+    "suitcss-utils-layout": "^0.4.2",
+    "suitcss-utils-link": "^0.5.2",
+    "suitcss-utils-size": "^0.7.2",
+    "suitcss-utils-text": "^0.4.2"
   }
 }

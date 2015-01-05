@@ -1,0 +1,14 @@
+<ul class="Listing">
+  {% for listing in include.content %}
+    <li class="Listing-item">
+      <time class="Meta" datetime="{{ listing.date }}" pubdate>
+        {{ listing.date | date:"%B %d, %Y" }}
+      </time>
+      <h2 class="HeadingC u-noMargin">
+        <a class="Listing-link" href="{{ listing.url }}">
+          {{ listing.title }}
+        </a>
+      </h2>
+    </li>
+  {% endfor %}
+</ul>

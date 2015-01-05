@@ -16,8 +16,8 @@ var finalhandler = require('finalhandler');
 var options = {
   'port': 8000,
   'host': 'localhost',
-  'cssSrcPath': './css/src/',
-  'cssDistPath': './css/dist/',
+  'cssSrcPath': './src/css/src/',
+  'cssDistPath': './src/css/dist/',
   'cssJekyllPath': './_site/css/dist'
 };
 
@@ -38,8 +38,10 @@ gulp.task('open', function() {
 
 gulp.task('css', function () {
   gulp.src(options.cssSrcPath + 'main.css')
-    .pipe(rework(suit()))
+    .pipe(rework(suit()).on('error', gutil.log))
+    .pipe(autoprefixer())
     .pipe(csso())
+    .pipe(rename('main.min.css'))
     .pipe(gulp.dest(options.cssDistPath))
     .pipe(gulp.dest(options.cssJekyllPath))
     .pipe(livereload());
@@ -50,8 +52,7 @@ gulp.task('jekyll', function () {
     stdio: 'inherit'
   });
 
-  gulp.src(['_site/**/*.html', '_site/**/*.md'])
-    .pipe(livereload);
+  gulp.src(['_site/**/*.html', '_site/**/*.md']);
 })
 
 gulp.task('watch', function() {
