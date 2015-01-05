@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  {% if page.title == index %}
+    <title>Alex Lande</title>
+  {% else %}
+    <title>{{ page.title }} | Alex Lande</title>
+  {% endif %}
+
+  <meta name="description" content="Front-end developer, web design curmudgeon. Building things in Seattle, WA.">
+
+  <meta name="author" content="Alex Lande">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="google-site-verification" content="FkPcVHJUivOJmM2LE8BIzepzcT5JfxwXvI3BDvvGL6Q">
+
+  <link rel="stylesheet" href="/css/dist/main.min.css">
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6367052/799142/css/fonts.css" />
+</head>
+
+<body class="Site u-fontSmoothing">
+  <header class="Site-header Header MiniRow" role="banner">
+    <div class="HeaderFlex Container">
+      <div class="HeaderFlex-sizeFill">
+        <a class="Logo HeaderLink u-textKern" href="/">Alex Lande</a>
+      </div>
+
+      <nav>
+        <ul class="Nav u-noMargin LineList u-textNoWrap">
+          <li class="Nav-item">
+            <a class="Nav-link HeaderLink" href="/">Articles</a>
+          </li>
+          <li class="Nav-item">
+            <a class="Nav-link HeaderLink" href="/about">About</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main" class="Site-content Row Container">
+    {{ content }}
+  </main>
+
+  <footer class="Site-footer Footer MiniRow u-textCenter" role="contentinfo">
+    <div class="Container u-marginModule">
+      <p>Thanks for reading.</p>
+
+      <nav class="FooterNav">
+        <ul class="FooterNav-section LineList">
+          <li class="FooterNav-item">
+            <a class="FooterLink" href="/">Articles</a>
+          </li>
+          <li class="FooterNav-item">
+            <a class="FooterLink" href="/about">About</a>
+          </li>
+        </ul>
+
+        <ul class="FooterNav-section LineList">
+          <li>
+            <a class="FooterLink" href="https://www.twitter.com/alexlande">Twitter</a>
+          </li>
+          <li>
+            <a class="FooterLink" href="https://www.github.com/alexlande">GitHub</a>
+          </li>
+        </ul>
+      </nav>
+
+      <p>Copyright &copy; {{ 'now' | date: "%Y" }}</p>
+    </div>
+  </footer>
+
+  <script>
+    var _gaq=[['_setAccount','UA-10034002-4'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+
+  {% if page.comments == true %}
+    <script type="text/javascript">
+      var disqus_shortname = 'alexlande';
+      (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
+    </script>
+  {% endif %}
+</body>
+</html>

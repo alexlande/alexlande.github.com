@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+
+/**
+ * Margin module.
+ *
+ * Removes bottom margin from last child of element. Used to create even spacing
+ * on module content.
+ */
+
+.u-marginModule > *:last-child {
+  margin-bottom: 0 !important;
+}
+
+/**
+ * Margin Removal
+ */
+
+.u-noMargin {
+  margin: 0 !important;
+}
+
+/**
+ * Default Margin
+ */
+
+.u-defaultMargin {
+  margin-bottom: 1.5rem;
+}
+
+/**
+ * Font Smoothing
+ */
+
+.u-fontSmoothing {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/**
+ * Container
+ */
+
+.Container {
+  max-width: 62rem;
+  margin: 0 auto;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+
+@media (--sm-viewport) {
+  .Container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+@media (--md-viewport) {
+  .Container {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+.Container--narrow {
+  max-width: 42rem;
+}
+
+.Container--full {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/**
+ * Row
+ */
+
+.Row {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.MiniRow {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (--md-viewport) {
+  .Row {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .MiniRow {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}

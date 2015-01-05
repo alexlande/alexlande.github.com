@@ -1,0 +1,71 @@
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.Header {
+  background: var(--Color-orange);
+  box-shadow: inset 0 -1px 0 var(--Color-orange-dark);
+}
+
+/**
+ * Header Links
+ */
+
+.HeaderLink {
+  color: var(--Color-off-white);
+  text-shadow: 0 -1px 0 var(--Color-orange-dark);
+}
+
+.HeaderLink:hover,
+.HeaderLink:focus {
+  color: var(--Color-grey-dark);
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+}
+
+/**
+ * Header Layout
+ */
+
+.HeaderFlex {
+  display: flex;
+  align-items: center;
+}
+
+.HeaderFlex-sizeFill {
+  flex: 1;
+}
+
+/**
+ * Logo
+ */
+
+.Logo {
+  /* 18px */
+  font-size: 1.125rem;
+}
+
+@media (--md-viewport) {
+  .Logo {
+    /* 24px */
+    font-size: 1.5rem;
+  }
+}
+
+/**
+ * Nav
+ */
+
+.Nav {
+  /* 14px */
+  font-size: 0.875rem;
+}
+
+@media (--md-viewport) {
+  .Nav {
+    font-size: 1rem;
+  }
+}
+
+.Nav-link {
+  font-weight: 600;
+}

@@ -16,8 +16,8 @@ var finalhandler = require('finalhandler');
 var options = {
   'port': 8000,
   'host': 'localhost',
-  'cssSrcPath': './src/css/src/',
-  'cssDistPath': './src/css/dist/',
+  'cssSrcPath': './css/src/',
+  'cssDistPath': './css/dist/',
   'cssJekyllPath': './_site/css/dist'
 };
 
@@ -57,7 +57,12 @@ gulp.task('jekyll', function () {
 
 gulp.task('watch', function() {
   gulp.watch(options.cssSrcPath + '**/*.css', ['css']);
-  gulp.watch(['src/**/*.html', 'src/**/*.md'], ['jekyll']);
+  gulp.watch([
+    './**/*.html',
+    './**/*.md',
+    '!./_site/**/*',
+    '!./node_modules/**/*'
+  ], ['jekyll']);
 });
 
 gulp.task('build', ['css', 'jekyll']);
