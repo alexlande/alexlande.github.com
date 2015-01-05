@@ -11,11 +11,18 @@ layout: default
     </time>
   </header>
 
-  <p class="Kicker">
-    {{ page.excerpt | remove: "<p>" | remove: "</p>" }}
-  </p>
+  {% if page.isShort %}
+    <div class="Kicker">
+      {{ content }}
+    </div>
+  {% else %}
+    <p class="Kicker">
+      {{ page.excerpt | remove: "<p>" | remove: "</p>" }}
+    </p>
 
-  <div class="Article Container Container--narrow Container--full u-marginModule">
-    {{ content | remove: page.excerpt }}
-  </div>
+    <div class="Article Container Container--narrow Container--full u-marginModule">
+      {{ content | remove: page.excerpt }}
+    </div>
+  {% endif %}
+
 </article>

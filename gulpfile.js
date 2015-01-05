@@ -60,6 +60,6 @@ gulp.task('watch', function() {
   gulp.watch(['src/**/*.html', 'src/**/*.md'], ['jekyll']);
 });
 
-gulp.task('build', ['css']);
+gulp.task('build', ['css', 'jekyll']);
 gulp.task('default', ['server', 'build', 'watch']);
 gulp.task('start', ['open', 'default']);
