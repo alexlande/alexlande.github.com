@@ -15,11 +15,13 @@
 /**
  * Colors
  */
+  --Color-grey-ultradark: #221F19;
+  --Color-grey-dark: #332F29;
+  --Color-grey-medium: #777065;
+  --Color-grey-light: #DDD4C7;
+
   --Color-off-white: #fefefe;
-  --Color-grey-ultradark: #222;
-  --Color-grey-dark: #333;
-  --Color-grey-medium: #777;
-  --Color-grey-light: #ddd;
+
   --Color-orange: #ff9900;
   --Color-orange-dark: #ea8c00;
   --Color-orange-text: #c78000;
