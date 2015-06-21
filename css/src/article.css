@@ -17,12 +17,33 @@
   }
 }
 
+.Article ul {
+  padding-left: 3rem;
+}
+
+.Article ul > li {
+  position: relative;
+}
+
+.Article ul > li:before {
+  content: "";
+  position: absolute;
+  top: 0.6em;
+  left: -1.5rem;
+
+  height: 0.4em;
+  width: 0.4em;
+
+  background: var(--Color-orange);
+  border-radius: 50%;
+}
+
 .Article code {
   margin: 0 0.125em;
-  padding: 3px;
+  padding: 0 3px;
   border-radius: 2px;
 
-  background: var(--Color-grey-light);
+  background: var(--Color-grey-ultralight);
   font-family: var(--Font-code);
 }
 
