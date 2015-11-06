@@ -1,0 +1,29 @@
+---
+layout: article
+category: articles
+title: Embracing Constraint
+published: true
+timestamp: true
+---
+
+I’ve been thinking about the graphics of massively multiplayer online role-playing games from 2004. Bear with me.
+
+For the uninitiated, <abbr title="Massively multiplayer online role-playing games">MMORPGs</abbr> are a niche sub-genre of video games in which thousands of people play on the same servers simultaneously. Players explore large open worlds, taking on jobs, exploring dungeons, and battling massive and powerful bosses. As they play, they encounter other players on their own journeys, and can choose to cooperate or compete with the other inhabitants of their shared digital world. It’s not uncommon for players to develop analog relationships from the resulting connections: friendships, rivalries, romances.
+
+In 2004, the insular MMO scene was rocked by the arrival of [World of Warcraft](https://en.wikipedia.org/wiki/World_of_Warcraft). The game was a continuation of a popular series of computer games, and was the first foray into massively multiplayer games for the series, the studio that designed it, and a very large and dedicated base of pre-existing fans. Warcraft became an enormous success to a degree that no other game in the genre has before or since. (The genre has fallen out of favor over the last few years, so it’s not impossible that it will remain the most prominent piece of the canon for all time.) The reasons for this had a lot to do with the way that the game eschewed genre conventions, making it more approachable and accessible than traditional MMOs.
+
+Although there was considerable hype during the game’s development process and release, Warcraft’s visual graphics were a sticking point within the gaming community. While other games at the time demonstrated cutting-edge, realistic visuals, Warcraft went in a different direction with a vibrant art style and relatively simple graphics&mdash; realism was out the window.
+
+Reactions were mixed, with many players decrying the unimpressive graphics. Common refrains were that Warcraft looked like a cartoon, and that the visuals were embarrassing in comparison to other games released at the time. Then, something interesting happened. The game was released, and it became clear quickly that the lack of advanced graphics really wasn’t a hindrance. Warcraft’s unique visual style and strong creative direction more than made up for any shortcomings in raw power. The result was visually engaging, highly polished, and quite beautiful in its own way.
+
+The truth of the matter was that the game designers were fully capable of creating cutting-edge visuals, but wisely chose not to. This was their design, and it had two key benefits.
+
+The first was that the game didn’t ask much of your computer. It looked good and ran smoothly on low-end hardware, which opened it up to as large of a user-base as possible, including fans of the older games in the series. This practical application of art direction over graphical prowess has roots in the beginning of the franchise in 1994. The original [Warcraft: Orcs & Humans](https://en.wikipedia.org/wiki/Warcraft:_Orcs_%26_Humans) made a similar decision to embrace a vibrant, high contrast creative direction over a more realistic and drab one, with the goal of making the game look distinctive on low-end monitors. This practice was so integral to the development process that [team members worked with their window blinds open](http://www.codeofhonor.com/blog/the-making-of-warcraft-part-2) so that the glare of sunlight washed out their screens. If the game was still playable and looked good in those conditions, it should work everywhere.
+
+The second was that it gave the game’s visuals longevity. Video game graphics have been an arms race since the introduction of the medium, with impressive advancements being made all the time. This has the unfortunate side effect of making it relatively easy to estimate when a game was released within a couple of years of accuracy. By refusing to take part in this process, Warcraft was able to work with their initial design for years with minimal updates.
+
+I don’t find video game graphics particularly interesting, to be honest. What I do find interesting is the concept of embracing constraints rather than struggling against them. The designers of World of Warcraft knew that the game they were making would appeal to players using computers with a wide range of technical power, and they knew that it should last as long as possible (a long lifespan is the sign of a successful MMO), so they built a graphical system that would meet those requirements.
+
+In recent years, it has become much more common to see similar graphical decisions made throughout the gaming world. Deliberately retro pixel art has exploded in popularity, making games with lower graphical budgets able to compete and look good doing so. Minecraft, a game in which everything is made up of brightly colored voxels, is one of the most popular games of all time.
+
+On the web, it’s very common to lash out at the constraints of the medium, or feebly attempt to fix them. Instead of following the [grain of the web](http://www.frankchimero.com/writing/the-webs-grain/), we implement custom form controls and build rigid layouts. We build digital monuments to excess that look beautiful on the latest desktop browsers and grind the rest of the web-connected world to a halt. I wonder what would happen if we worked harder to embrace the constraints of the web. Could we design systems built to thrive in low bandwidth, and the glare of the sun as we sit on a park bench? What if someone rebuilt your favorite online store and made it minimal, responsive&mdash; *of* the web. What if that worked, because what people really want are fast, reliable experiences? Wouldn’t that be something?
