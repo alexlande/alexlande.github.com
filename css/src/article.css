@@ -104,7 +104,6 @@
 
  .Article .footnotes ol {
    color: var(--Color-grey-medium);
-   font-size: 0.875rem;
    list-style: decimal;
  }
 
