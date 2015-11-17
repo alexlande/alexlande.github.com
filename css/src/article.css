@@ -104,8 +104,14 @@
 
  .Article .footnotes ol {
    color: var(--Color-grey-medium);
-   font-size: 1rem;
+   font-size: 0.875rem;
    list-style: decimal;
+ }
+
+ @media (--md-viewport) {
+   .Article .footnotes ol {
+     font-size: 1rem;
+   }
  }
 
  .Article .footnotes p {
