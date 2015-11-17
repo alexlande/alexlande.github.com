@@ -92,3 +92,22 @@
 .ArticleLinks a:focus {
   box-shadow: 0 2px 0 var(--Color-orange);
 }
+
+/**
+ * Footnotes
+ */
+
+ .Article .footnotes hr {
+   border: 0;
+   border-top: 1px solid var(--Color-grey-light);
+ }
+
+ .Article .footnotes ol {
+   color: var(--Color-grey-medium);
+   font-size: 1rem;
+   list-style: decimal;
+ }
+
+ .Article .footnotes p {
+   color: var(--Color-grey-dark);
+ }
