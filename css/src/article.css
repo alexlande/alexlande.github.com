@@ -105,11 +105,13 @@
  .Article .footnotes ol {
    color: var(--Color-grey-medium);
    list-style: decimal;
+   padding-left: 1rem;
  }
 
  @media (--md-viewport) {
    .Article .footnotes ol {
-     font-size: 1rem;
+     font-size: 0.875rem;
+     padding-left: 0;
    }
  }
 
