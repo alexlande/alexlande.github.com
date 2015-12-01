@@ -6,7 +6,7 @@ published: true
 timestamp: true
 ---
 
-Earlier this year I gave a talk called [*React Inline Styles and the Future of CSS*](https://speakerdeck.com/alexlande/react-inline-styles-and-the-future-of-css) at [CSS Dev Conf](http://2015.cssdevconf.com/). It was an amazing and terrifying experience, and the fulfillment of a goal I had been working torward for the past two years.
+Earlier this year I gave a talk called [*React Inline Styles and the Future of CSS*](https://speakerdeck.com/alexlande/react-inline-styles-and-the-future-of-css) at [CSS Dev Conf](http://2015.cssdevconf.com/). It was an amazing and terrifying experience, and the fulfillment of a goal I had been working toward for the past two years.
 
 ## The idea
 
