@@ -6,7 +6,7 @@ published: true
 timestamp: true
 ---
 
-I’m very lucky to live close my work. Most days, to get to the [Formidable](https://formidable.com) office, I hop on the bus for a ten minute ride. To pass the time, I gaze out of windows and observe the marks of the passage of time on the city, sometimes pausing briefly for wistful remembrances of my youth. That and Twitter. I wear out the pull-to-refresh gesture like you wouldn’t believe because the bus is boring as hell.
+I’m very lucky to live close to my work. Most days, to get to the [Formidable](https://formidable.com) office, I hop on the bus for a ten minute ride. To pass the time, I gaze out of windows and observe the marks of the passage of time on the city, sometimes pausing briefly for wistful remembrances of my youth. That and Twitter. I wear out the pull-to-refresh gesture like you wouldn’t believe because the bus is boring as hell.
 
 A few months ago I started working on-site at a client’s office a few times a week, which took my commute from ten minutes to an hour. I wasn’t keen on throwing away two hours of my day, and even Twitter has its limits, so I started working on better ways to pass the time. I realized quickly that my commute wasn’t something that I had to get through, but two solid blocks of uninterrupted, distraction-free time, which is actually pretty valuable.
 
