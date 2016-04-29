@@ -48,7 +48,7 @@ Spotting a link that should be a button is easy. Just look for an anchor that do
 
 ## An Aside on ARIA
 
-For people who really want to stick with `<a>`, the [`aria-role="button"`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role) attribute looks like an attractive option. If you add the attribute, the element is pretty much a button, right?
+For people who really want to stick with `<a>`, the ARIA [`role="button"`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_button_role) attribute looks like an attractive option. If you add the attribute, the element is pretty much a button, right?
 
 Unfortunately, using an ARIA role will get you part of the way there, but it isn't a complete solution. While screen readers will interpret the link as a button, the element still responds to keyboard input as if it were a link. Pressing the `enter` key will fire a `click` event on the button, but pressing `space` as you would expect for a button will do nothing. Confusing! If you go this route, you'll need to write custom JavaScript event handlers to listen for the `space` key and react appropriately.
 
