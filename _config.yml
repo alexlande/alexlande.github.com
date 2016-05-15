@@ -5,6 +5,5 @@ exclude: [
   "Gemfile",
   "Gemfile.lock"
 ]
-markdown: "redcarpet"
 redcarpet:
   extensions: ["footnotes"]
