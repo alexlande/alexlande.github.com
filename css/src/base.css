@@ -21,26 +21,45 @@ html {
  */
 
 body {
-  background: var(--Color-off-white);
-  color: var(--Color-grey-dark);
-  font-family: var(--Font-serif);
+  background: var(--colorWhite);
+  color: var(--colorPurpleDark);
+  font-family: var(--fontSerif);
   line-height: 1.7;
 }
 
 b,
 strong {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /**
- * Default Margins
+ * Removes the default spacing and border for appropriate elements.
  */
 
-h1,h2,h3,h4,h5,h6,hgroup,
-ul,ol,dd,
-p,figure,
-pre,table,fieldset,hr {
-  margin-bottom: 1.5rem;
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+/**
+ * Lists
+ */
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /**
@@ -48,6 +67,11 @@ pre,table,fieldset,hr {
  */
 
 a {
-  color: var(--Color-orange-text);
+  color: var(--colorOrangeText);
   text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  box-shadow: 0 2px 0 currentcolor !important;
 }

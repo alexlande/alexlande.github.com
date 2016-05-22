@@ -10,7 +10,7 @@ Earlier this year I gave a talk called [*React Inline Styles and the Future of C
 
 ## The idea
 
-CSS Dev Conf opened their <abbr title=“Call for proposals”>CFP</abbr> in March, with the conference scheduled for October. I had submitted a proposal to speak the year before which was rejected, so I was eager to try again. I had been thinking about the topic for a while by the time the CFP opened, so my proposal came pretty easily.
+CSS Dev Conf opened their <abbr markdown="0" title="Call for proposals">CFP</abbr> in March, with the conference scheduled for October. I had submitted a proposal to speak the year before which was rejected, so I was eager to try again. I had been thinking about the topic for a while by the time the CFP opened, so my proposal came pretty easily.
 
 As you would expect, many speakers submit proposals on subjects that they’re experts in. A lot of people submit talks on things they don’t know much about but would like to learn about, too, which can also be a great idea. Teaching something is an effective way to learn about it, and your excitement about the cool new thing you’re doing will carry over into your talk. My topic was half based on personal experience and half things I wanted to learn about, which felt like a nice balance. I had also reviewed proposals earlier in the year when I organized [CascadiaCSS](http://2015.cascadiajs.com/css/), so I had picked up a few ideas.
 

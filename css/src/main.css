@@ -1,16 +1,12 @@
 @import './variables.css';
 
-@import 'normalize.css';
-@import 'suitcss-base';
+@import './normalize.css';
+
 @import './base.css';
 
+@import './components.css';
+@import './headings.css';
 @import './layout.css';
 
-@import './type.css';
-@import './components.css';
-@import './header.css';
-@import './article.css';
-@import './footer.css';
-
-@import 'suitcss-utils-text';
-@import './utils.css';
+@import './functional.css';
+@import './syntax.css';

@@ -17,54 +17,54 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="google-site-verification" content="FkPcVHJUivOJmM2LE8BIzepzcT5JfxwXvI3BDvvGL6Q">
 
-  <link rel="stylesheet" href="/css/dist/main.min.css">
-  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6367052/799142/css/fonts.css" />
+  <link rel="alternate" type="application/rss+xml" href="/feed">
+  <style>{% include main.css %}</style>
 </head>
 
-<body class="Site u-fontSmoothing">
-  <header class="Site-header Header MiniRow" role="banner">
-    <div class="HeaderFlex Container">
-      <div class="HeaderFlex-sizeFill">
-        <a class="Logo HeaderLink u-textKern" href="/">Alex Lande</a>
+<body class="Site fontSmoothing">
+  <header class="Site-header Header py1 bg-orangeGradient" role="banner">
+    <div class="flex items-center Container">
+      <div class="flex-auto">
+        <a class="f18 f24-m sans fw7 white" href="/">Alex Lande</a>
       </div>
 
       <nav>
-        <ul class="Nav u-noMargin LineList u-textNoWrap">
-          <li class="Nav-item">
-            <a class="Nav-link HeaderLink" href="/">Articles</a>
+        <ul class="f14 f16-m flex">
+          <li>
+            <a class="white f12 f14-m SpacedCaps" href="/">Articles</a>
           </li>
-          <li class="Nav-item">
-            <a class="Nav-link HeaderLink" href="/about">About</a>
+          <li class="ml1 ml2-m">
+            <a class="white f12 f14-m SpacedCaps" href="/about">About</a>
           </li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main role="main" class="Site-content Row Container">
+  <main role="main" class="Site-content">
     {{ content }}
   </main>
 
-  <footer class="Site-footer Footer MiniRow u-textCenter" role="contentinfo">
-    <div class="Container u-marginModule">
-      <p>Thanks for reading.</p>
+  <footer class="f14 f16-m white bg-orangeGradient py2 py5-m tc Site-footer" role="contentinfo">
+    <div class="Container">
+      <p class="f32 mb2">Thanks for reading.</p>
 
-      <nav class="FooterNav">
-        <ul class="FooterNav-section LineList">
-          <li class="FooterNav-item">
-            <a class="FooterLink" href="/">Articles</a>
-          </li>
-          <li class="FooterNav-item">
-            <a class="FooterLink" href="/about">About</a>
-          </li>
-        </ul>
-
-        <ul class="FooterNav-section LineList">
+      <nav class="mb2 f14 f16-m">
+        <ul class="flex justify-center flex-column flex-row-m">
           <li>
-            <a class="FooterLink" href="https://www.twitter.com/alexlande">Twitter</a>
+            <a class="white f12 f14-m SpacedCaps" href="/">Articles</a>
           </li>
-          <li>
-            <a class="FooterLink" href="https://www.github.com/alexlande">GitHub</a>
+          <li class="mt1 mt0-m ml2-m">
+            <a class="white f12 f14-m SpacedCaps" href="/about">About</a>
+          </li>
+          <li class="mt1 mt0-m ml2-m">
+            <a class='white f12 f14-m SpacedCaps' href="/feed">Feed</a>
+          </li>
+          <li class="mt1 mt0-m ml2-m">
+            <a class="white f12 f14-m SpacedCaps" href="https://www.twitter.com/alexlande">Twitter</a>
+          </li>
+          <li class="mt1 mt0-m ml2-m">
+            <a class="white f12 f14-m SpacedCaps" href="https://www.github.com/alexlande">GitHub</a>
           </li>
         </ul>
       </nav>
@@ -74,20 +74,13 @@
   </footer>
 
   <script>
-    var _gaq=[['_setAccount','UA-10034002-4'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  {% if page.comments == true %}
-    <script type="text/javascript">
-      var disqus_shortname = 'alexlande';
-      (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-      }());
-    </script>
-  {% endif %}
+    ga('create', 'UA-10034002-4', 'auto');
+    ga('send', 'pageview');
+  </script>
 </body>
 </html>

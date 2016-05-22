@@ -14,10 +14,12 @@ If you're writing CSS in 2012, there's a good chance that you've tried pre-proce
 
 It feels sort of odd to use an IE style sheet in a world of [conditional classes](http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/), but if we're going to we might as well make the most of it. Even if you aren't much of a pre-processor, you've likely realized that modularizing your CSS in this way doesn't have to stop with media queries. Since we're already creating an IE-specific style sheet, we might as well import our IE-specific styles (written with the aforementioned conditional classes) into that file and leave them out of the other, like so:
 
-	@import "480.scss";
-	@import "768.scss";
-	@import "992.scss";
-	@import "ie.scss";
+```scss
+@import "480.scss";
+@import "768.scss";
+@import "992.scss";
+@import "ie.scss";
+```
 
 Easy as that, your main styles are free of <code>.ie7</code> and <code>.oldie</code>. Feels good, right?
 
@@ -27,9 +29,11 @@ One of the little-discussed benefits of media query polyfills like [Respond.js](
 
 The same thing is possible with the Sass importing method. It's easiest if you're using [Modernizr](https://github.com/Modernizr/Modernizr), which has both html5shiv and a conditional loader called yepnope built in. Using yepnope, we can ensure that the legacy style sheet only loads when html5shiv is in use:
 
-	<!--[if (lt IE 9) & (!IEMobile)]>
-	  <script>yepnope('/css/legacy.css')</script>
-	<![endif]-->
+```html
+<!--[if (lt IE 9) & (!IEMobile)]>
+  <script>yepnope('/css/legacy.css')</script>
+<![endif]-->
+```
 
 You can toss a script like [Selectivizr](https://github.com/keithclark/selectivizr) in at the same time, if you're so inclined.
 

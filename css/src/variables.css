@@ -7,30 +7,28 @@
  */
 
 @custom-media --sm-viewport (min-width:20em);
-@custom-media --md-viewport (min-width:42em);
+@custom-media --m-viewport (min-width:42em);
 @custom-media --lg-viewport (min-width:62em);
-
 
 :root {
 /**
- * Colors
+ * New Colors
  */
-  --Color-grey-ultradark: #221F19;
-  --Color-grey-dark: #332F29;
-  --Color-grey-medium: #777065;
-  --Color-grey-light: #DDD4C7;
-  --Color-grey-ultralight: #EEEBE7;
+  --colorOrange: #f55a32;
+  --colorOrangeText: #c78000;
+  --colorPink: #fa2e5d;
+  --colorYellow: #fff3e1;
+  --colorPurple: #b7929a;
+  --colorPurpleDark: #644d52;
 
-  --Color-off-white: #fefefe;
-
-  --Color-orange: #ff9900;
-  --Color-orange-dark: #ea8c00;
-  --Color-orange-text: #c78000;
+  --colorWhite: #fefefe;
+  --colorGreyLight: #DDD4C7;
+  --colorGreyUltralight: #EEEBE7;
 
 /**
  * Fonts
  */
-  --Font-serif: Sentinel SSm A, Sentinel SSm B, Georgia, Times New Roman, serif;
-  --Font-sans: Ideal Sans SSm A, Ideal Sans SSm B, Helvetica Neue, Helvetica, Arial, sans-serif;
-  --Font-code: Bitstream Vera Sans Mono, Source Code Pro, Andale Mono, Lucida Console, monospace;
+  --fontSerif: Iowan Old Style, Georgia, Times New Roman, serif;
+  --fontSans: Avenir, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --fontCode: Bitstream Vera Sans Mono, Source Code Pro, Andale Mono, Lucida Console, monospace;
 }

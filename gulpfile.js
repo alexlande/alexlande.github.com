@@ -1,14 +1,9 @@
 var gulp = require('gulp');
-var gutil = require('gulp-util');
-var autoprefixer = require('gulp-autoprefixer');
-var concat = require('gulp-concat');
-var livereload = require('gulp-livereload');
-var open = require('open');
-var rename = require('gulp-rename');
 var spawn = require('child_process').spawn;
-var rework = require('gulp-rework');
-var suit = require('rework-suit');
-var csso = require('gulp-csso');
+var postcss = require('gulp-postcss');
+var cssnext = require('postcss-cssnext');
+var cssnano = require('cssnano');
+var atImport = require("postcss-import")
 var http = require('http');
 var serveStatic = require('serve-static');
 var finalhandler = require('finalhandler');
@@ -17,8 +12,7 @@ var options = {
   'port': 8000,
   'host': 'localhost',
   'cssSrcPath': './css/src/',
-  'cssDistPath': './css/dist/',
-  'cssJekyllPath': './_site/css/dist'
+  'cssDistPath': './_includes/'
 };
 
 gulp.task('server', function () {
@@ -32,19 +26,10 @@ gulp.task('server', function () {
   server.listen(options.port);
 });
 
-gulp.task('open', function() {
-  open('http://' + options.host + ':' + options.port);
-});
-
 gulp.task('css', function () {
   gulp.src(options.cssSrcPath + 'main.css')
-    .pipe(rework(suit()).on('error', gutil.log))
-    .pipe(autoprefixer())
-    .pipe(csso())
-    .pipe(rename('main.min.css'))
-    .pipe(gulp.dest(options.cssDistPath))
-    .pipe(gulp.dest(options.cssJekyllPath))
-    .pipe(livereload());
+    .pipe(postcss([atImport, cssnext, cssnano]))
+    .pipe(gulp.dest(options.cssDistPath));
 });
 
 gulp.task('jekyll', function () {
@@ -58,6 +43,7 @@ gulp.task('jekyll', function () {
 gulp.task('watch', function() {
   gulp.watch(options.cssSrcPath + '**/*.css', ['css']);
   gulp.watch([
+    './_includes/main.css',
     './**/*.html',
     './**/*.md',
     '!./_site/**/*',
@@ -67,4 +53,3 @@ gulp.task('watch', function() {
 
 gulp.task('build', ['css', 'jekyll']);
 gulp.task('default', ['server', 'build', 'watch']);
-gulp.task('start', ['open', 'default']);
