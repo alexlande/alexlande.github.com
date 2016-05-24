@@ -15,7 +15,7 @@
  * New Colors
  */
   --colorOrange: #f55a32;
-  --colorOrangeText: #c78000;
+  --colorOrangeText: #e03106;
   --colorPink: #fa2e5d;
   --colorYellow: #fff3e1;
   --colorPurple: #b7929a;
@@ -24,6 +24,8 @@
   --colorWhite: #fefefe;
   --colorGreyLight: #DDD4C7;
   --colorGreyUltralight: #EEEBE7;
+
+  --gradientOrangePink: linear-gradient(45deg, var(--colorOrange), var(--colorPink));
 
 /**
  * Fonts

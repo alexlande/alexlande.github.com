@@ -4,8 +4,16 @@
   font-family: var(--fontSans);
 }
 
+.fw5 {
+  font-weight: 500;
+}
+
 .fw7 {
   font-weight: 700;
+}
+
+.fw9 {
+  font-weight: 900;
 }
 
 .f12 {
@@ -67,7 +75,7 @@
 /* Colors */
 
 .bg-orangeGradient {
-  background-image: linear-gradient(45deg, var(--colorOrange), var(--colorPink));
+  background-image: var(--gradientOrangePink);
 }
 
 .bg-yellow {
